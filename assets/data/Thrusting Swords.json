@@ -1,0 +1,72 @@
+[
+  {
+      "Image": "estoc.png",
+      "Name": "Estoc",
+      "Damage": "75/0/0/0  (Normal/Piercing)",
+      "Critical Bonus": "100",
+      "Durability": "150",
+      "Weight": "3.0",
+      "Stats": {
+          "Stats Needed": "10*/12/0/0",
+          "Stat Bonuses": "D/C/-/-"
+      },
+      "Availability": "New Londo Ruins treasure",
+      "Special Note": "Strong attack is a lunging slash."
+  },
+  {
+      "Image": "mail-breaker.png",
+      "Name": "Mail Breaker",
+      "Damage": "57/0/0/0  (Piercing)",
+      "Critical Bonus": "120",
+      "Durability": "200",
+      "Weight": "0.5",
+      "Stats": {
+          "Stats Needed": "5*/12/0/0",
+          "Stat Bonuses": "D/C/-/-"
+      },
+      "Availability": "Undead Burg treasure",
+      "Special Note": "Strong attack is a short stab."
+  },
+  {
+      "Image": "rapier.png",
+      "Name": "Rapier",
+      "Damage": "73/0/0/0  (Piercing)",
+      "Critical Bonus": "110",
+      "Durability": "150",
+      "Weight": "1.5",
+      "Stats": {
+          "Stats Needed": "7*/12/0/0",
+          "Stat Bonuses": "D/C/-/-"
+      },
+      "Availability": "Sold by the Undead Merchant Male for 600 souls Dropped by Balder Knight (Rapier/Buckler)",
+      "Special Note": "Strong attack is a lunging thrust."
+  },
+  {
+      "Image": "ricard-s-rapier.png",
+      "Name": "Ricard's Rapier",
+      "Damage": "70/0/0/0  (Piercing)",
+      "Critical Bonus": "100",
+      "Durability": "100",
+      "Weight": "2.0",
+      "Stats": {
+          "Stats Needed": "8*/20/0/0",
+          "Stat Bonuses": "E/B/-/-"
+      },
+      "Availability": "Undead Prince Ricard drop",
+      "Special Note": "Strong attack is a lunging double thrust."
+  },
+  {
+      "Image": "velka-s-rapier.png",
+      "Name": "Velka's Rapier",
+      "Damage": "62/104/0/0  Dark 110  (Piercing)",
+      "Critical Bonus": "100",
+      "Durability": "130",
+      "Weight": "2.0",
+      "Stats": {
+          "Stats Needed": "8*/16/16/0",
+          "Stat Bonuses": "E/C/B/-"
+      },
+      "Availability": "Painted World of Ariamis treasure",
+      "Special Note": "Strong attack is double vertical slash."
+  }
+]

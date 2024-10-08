@@ -1,0 +1,41 @@
+[
+  {
+      "Image": "guardian-tail.png",
+      "Name": "Guardian Tail",
+      "Damage": "84/0/0/0  Poison 300",
+      "Durability": "250",
+      "Weight": "5.0",
+      "Stats": {
+          "Stats Needed": "15*/10/0/0",
+          "Stat Bonuses": "-/C/-/-"
+      },
+      "Availability": "Sanctuary Guardian drop (tail cut)  Lesser Sanctuary Guardian drop (tail cut)",
+      "Special Note": "-"
+  },
+  {
+      "Image": "notched-whip.png",
+      "Name": "Notched Whip",
+      "Damage": "76/0/0/0  Bleed 300",
+      "Durability": "200",
+      "Weight": "2.0",
+      "Stats": {
+          "Stats Needed": "8*/16/0/0",
+          "Stat Bonuses": "-/B/-/-"
+      },
+      "Availability": "Xanthous King, Jeremiah drop",
+      "Special Note": "Bleed is 33 per strike. Once inflicted  does 30% of the enemy's total HP"
+  },
+  {
+      "Image": "whip.png",
+      "Name": "Whip",
+      "Damage": "80/0/0/0  (Normal)",
+      "Durability": "200",
+      "Weight": "1.5",
+      "Stats": {
+          "Stats Needed": "7*/14/0/0",
+          "Stat Bonuses": "-/B/-/-"
+      },
+      "Availability": "Blighttown treasure",
+      "Special Note": "-"
+  }
+]

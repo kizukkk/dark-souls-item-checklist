@@ -1,0 +1,155 @@
+[
+  {
+      "Image": "beatrice-s-catalyst.png",
+      "Name": "Beatrice's Catalyst",
+      "Maximum Magic Adjustment": "240",
+      "(varies with Intelligence)": "40/0/0/0  (Strike)",
+      "Damage": "90",
+      "Durability": "2.0",
+      "Weight": "6/0/10/0  E/-/A/-",
+      "Stats": {
+          "Stats Needed": "Found in",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Stats are identical with Sorcerer's Catalyst."
+  },
+  {
+      "Image": "demon-s-catalyst.png",
+      "Name": "Demon's Catalyst",
+      "Maximum Magic Adjustment": "200",
+      "(varies with Intelligence)": "110/0/170/0  (Thrust)",
+      "Damage": "300",
+      "Durability": "4.0",
+      "Weight": "12/10/10/0  D/D/B/-",
+      "Stats": {
+          "Stats Needed": "Dropped by",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Secondary attack has Fire damage."
+  },
+  {
+      "Image": "izalith-catalyst.png",
+      "Name": "Izalith Catalyst",
+      "Maximum Magic Adjustment": "240",
+      "(varies with Intelligence)": "40/0/0/0  (Strike)",
+      "Damage": "300",
+      "Durability": "2.0",
+      "Weight": "6/0/14/0  E/-/A/-",
+      "Stats": {
+          "Stats Needed": "Dropped by the",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Identical MagAdjust with Beatrice's Catalyst and Sorcerer's Catalyst while having higher durability."
+  },
+  {
+      "Image": "logan-s-catalyst.png",
+      "Name": "Logan's Catalyst",
+      "Maximum Magic Adjustment": "250",
+      "(varies with Intelligence)": "46/0/0/0  (Strike)",
+      "Damage": "90",
+      "Durability": "2.0",
+      "Weight": "6/0/24/0  E/-/S/-",
+      "Stats": {
+          "Stats Needed": "Found in",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Highest MagAdjust after 40 INT, without halving spell usage."
+  },
+  {
+      "Image": "manus-catalyst.png",
+      "Name": "Manus Catalyst",
+      "Maximum Magic Adjustment": "295",
+      "(varies with Intelligence)": "190/0/0/0  (Strike)",
+      "Damage": "200",
+      "Durability": "5.0",
+      "Weight": "14/0/13/0  B/-/S/-",
+      "Stats": {
+          "Stats Needed": "Ascend any other catalyst with",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Halves spell usage. Secondary attack is axe's overhead smash."
+  },
+  {
+      "Image": "oolacile-catalyst.png",
+      "Name": "Oolacile Catalyst",
+      "Maximum Magic Adjustment": "180",
+      "(varies with Intelligence)": "40/0/0/0  (Strike)",
+      "Damage": "55",
+      "Durability": "2.0",
+      "Weight": "6/0/10/0  E/-/C/-",
+      "Stats": {
+          "Stats Needed": "Dropped by",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Fixed MagAdjust, doesn't scale with any attributes. Poison buildup with each melee hit."
+  },
+  {
+      "Image": "oolacile-ivory-catalyst.png",
+      "Name": "Oolacile Ivory Catalyst",
+      "Maximum Magic Adjustment": "180",
+      "(varies with Intelligence)": "24/0/0/0  (Strike)",
+      "Damage": "30",
+      "Durability": "0.5",
+      "Weight": "3/0/12/0  E/-/C/-",
+      "Stats": {
+          "Stats Needed": "Sold by",
+          "Stat Bonuses": "for 1,000 souls."
+      },
+      "Availability": "Fixed MagAdjust, doesn't scale with any attributes."
+  },
+  {
+      "Image": "sorcerer-s-catalyst.png",
+      "Name": "Sorcerer's Catalyst",
+      "Maximum Magic Adjustment": "240",
+      "(varies with Intelligence)": "40/0/0/0  (Strike)",
+      "Damage": "90",
+      "Durability": "2.0",
+      "Weight": "6/0/10/0  E/-/A/-",
+      "Stats": {
+          "Stat Bonuses": "for 500 souls."
+      },
+      "Availability": "Stats are identical to Beatrice's Catalyst."
+  },
+  {
+      "Image": "tin-banishment-catalyst.png",
+      "Name": "Tin Banishment Catalyst",
+      "Maximum Magic Adjustment": "220",
+      "(varies with Intelligence)": "145/0/0/0  (Thrust)",
+      "Damage": "160",
+      "Durability": "3.0",
+      "Weight": "10/10/12/0  E/D/A/-",
+      "Stats": {
+          "Stats Needed": "Found in",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Secondary attack is spear's thrust."
+  },
+  {
+      "Image": "tin-crystallization-catalyst.png",
+      "Name": "Tin Crystallization Catalyst",
+      "Maximum Magic Adjustment": "315",
+      "(varies with Intelligence)": "240/0/0/0  (Thrust)",
+      "Damage": "90",
+      "Durability": "2.5",
+      "Weight": "7/0/32/0  E/-/S/-",
+      "Stats": {
+          "Stats Needed": "Dropped by the insane",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Halves spell usage."
+  },
+  {
+      "Image": "tin-darkmoon-catalyst.png",
+      "Name": "Tin Darkmoon Catalyst",
+      "Maximum Magic Adjustment": "230",
+      "(varies with Intelligence)": "44/0/0/0  (Strike)",
+      "Damage": "60",
+      "Durability": "1.0",
+      "Weight": "4/0/0/16  E/-/-/A",
+      "Stats": {
+          "Stats Needed": "Ascend any other catalyst with",
+          "Stat Bonuses": "."
+      },
+      "Availability": "Scales with Faith rather than Intelligence."
+  }
+]

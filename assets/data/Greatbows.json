@@ -1,0 +1,30 @@
+[
+  {
+      "Image": "dragonslayer-greatbow.png",
+      "Name": "Dragonslayer Greatbow",
+      "Damage": "90/0/0/0  (Normal)",
+      "Range": "50",
+      "Durability": "100",
+      "Weight": "10.0",
+      "Stats": {
+          "Stats Needed": "20*/20/0/0",
+          "Stat Bonuses": "C/C/-/-"
+      },
+      "Availability": "Anor Londo treasure",
+      "Special Note": "Requires Dragonslayer Arrows or Gough's Great Arrows."
+  },
+  {
+      "Image": "gough-s-greatbow.png",
+      "Name": "Gough's Greatbow",
+      "Damage": "85/0/0/0  (Normal)",
+      "Range": "55",
+      "Durability": "100",
+      "Weight": "13.0",
+      "Stats": {
+          "Stats Needed": "27*/20/0/0",
+          "Stat Bonuses": "B/C/-/-"
+      },
+      "Availability": "Gift from Hawkeye Gough Drops from Hawkeye Gough",
+      "Special Note": "Requires Dragonslayer Arrows or Gough's Great Arrows."
+  }
+]

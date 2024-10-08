@@ -1,0 +1,119 @@
+[
+  {
+      "Image": "blacksmith-giant-hammer.png",
+      "Name": "Blacksmith Giant Hammer",
+      "Damage": "120/0/0/200  (Strike)",
+      "Durability": "250",
+      "Weight": "6.0",
+      "Stats": {
+          "Stats Needed": "16*/0/0/0",
+          "Stat Bonuses": "D/-/-/-"
+      },
+      "Availability": "Giant Blacksmith drop",
+      "Special Note": "-"
+  },
+  {
+      "Image": "blacksmith-hammer.png",
+      "Name": "Blacksmith Hammer",
+      "Damage": "87/0/0/0  (Strike)",
+      "Durability": "250",
+      "Weight": "5.0",
+      "Stats": {
+          "Stats Needed": "14*/0/0/0",
+          "Stat Bonuses": "C/-/-/-"
+      },
+      "Availability": "Andre of Astora drop",
+      "Special Note": "-"
+  },
+  {
+      "Image": "club.png",
+      "Name": "Club",
+      "Damage": "87/0/0/0  (Strike)",
+      "Durability": "250",
+      "Weight": "3.0",
+      "Stats": {
+          "Stats Needed": "10*/0/0/0",
+          "Stat Bonuses": "A/-/-/-"
+      },
+      "Availability": "Starting weapon of the Deprived class  Sold by Undead Merchant Male",
+      "Special Note": "-"
+  },
+  {
+      "Image": "hammer-of-vamos.png",
+      "Name": "Hammer of Vamos",
+      "Damage": "115/0/64/0  (Strike)",
+      "Durability": "250",
+      "Weight": "5",
+      "Stats": {
+          "Stats Needed": "14*/0/0/0",
+          "Stat Bonuses": "C/-/-/-"
+      },
+      "Availability": "Vamos drop",
+      "Special Note": "-"
+  },
+  {
+      "Image": "mace.png",
+      "Name": "Mace",
+      "Damage": "91/0/0/0  (Strike)",
+      "Durability": "250",
+      "Weight": "4.0",
+      "Stats": {
+          "Stats Needed": "12*/0/0/0",
+          "Stat Bonuses": "B/-/-/-"
+      },
+      "Availability": "Starting weapon of the Cleric class  Sold by Patches  The Catacombs treasure",
+      "Special Note": "-"
+  },
+  {
+      "Image": "morning-star.png",
+      "Name": "Morning Star",
+      "Damage": "83/0/0/0  Bleed 300  (Strike)",
+      "Durability": "200",
+      "Weight": "4.0",
+      "Stats": {
+          "Stats Needed": "11*/0/0/0",
+          "Stat Bonuses": "C/-/-/-"
+      },
+      "Availability": "Firelink Shrine treasure",
+      "Special Note": "Can inflict Bleed"
+  },
+  {
+      "Image": "pickaxe.png",
+      "Name": "Pickaxe",
+      "Damage": "89/0/0/0  (Thrust)",
+      "Durability": "250",
+      "Weight": "4.0",
+      "Stats": {
+          "Stats Needed": "14*/0/0/0",
+          "Stat Bonuses": "B/-/-/-"
+      },
+      "Availability": "Infested Barbarian (Boulder) drop",
+      "Special Note": "-"
+  },
+  {
+      "Image": "reinforced-club.png",
+      "Name": "Reinforced Club",
+      "Damage": "97/0/0/0  Bleed 300  (Strike)",
+      "Durability": "100",
+      "Weight": "4.0",
+      "Stats": {
+          "Stats Needed": "12*/0/0/0",
+          "Stat Bonuses": "C/-/-/-"
+      },
+      "Availability": "Sold by Undead Merchant(male)",
+      "Special Note": "Can inflict Bleed"
+  },
+  {
+      "Image": "warpick.png",
+      "Name": "Warpick",
+      "Damage": "91/0/0/0  (Thrust)",
+      "Durability": "220",
+      "Weight": "3.5",
+      "Stats": {
+          "Stats Needed": "11*/10/0/0",
+          "Stat Bonuses": "C/D/-/-"
+      },
+      "Availability": "Sold by Andre of Astora",
+      "Special Note": "-"
+  }
+]

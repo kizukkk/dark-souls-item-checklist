@@ -1,0 +1,93 @@
+[
+  {
+      "Image": "falchion.png",
+      "Name": "Falchion",
+      "Damage": "82/0/0/0  (Slash)",
+      "Durability": "160",
+      "Weight": "2.5",
+      "Stats": {
+          "Stats Needed": "9*/13/0/0",
+          "Stat Bonuses": "E/B/-/-"
+      },
+      "Availability": "Blighttown treasure  Skeleton (Sword) drop",
+      "Special Note": "-"
+  },
+  {
+      "Image": "gold-tracer.png",
+      "Name": "Gold Tracer",
+      "Damage": "130/0/0/0  Bleed 300  (Slash)",
+      "Durability": "240",
+      "Weight": "2.0",
+      "Stats": {
+          "Stats Needed": "9*/25/0/0",
+          "Stat Bonuses": "E/A/-/-"
+      },
+      "Availability": "Given by Lord's Blade Ciaran in exchange for Soul of Artorias  Lord's Blade Ciaran drop",
+      "Special Note": "One handed strong attack is replaced with double slash that can be followed up with additional slashes with an additional input  Two handed strong attack is replaced with triple slash that can be followed up with additional slashes with an additional input  Parry is replaced with a triple slash"
+  },
+  {
+      "Image": "jagged-ghost-blade.png",
+      "Name": "Jagged Ghost Blade",
+      "Damage": "155/0/0/0  Bleed 300  (Slash/Thrust)",
+      "Durability": "100",
+      "Weight": "1.5",
+      "Stats": {
+          "Stats Needed": "7*/0/0/0",
+          "Stat Bonuses": "E/-/-/-"
+      },
+      "Availability": "Ghost (Dagger) drop",
+      "Special Note": "Cursed weapon that can engage Ghosts in New Londo Ruins  One and two handed strong attack is replaced with a series of stabs"
+  },
+  {
+      "Image": "painting-guardian-sword.png",
+      "Name": "Painting Guardian Sword",
+      "Damage": "76/0/0/0  Bleed 300  (Slash)",
+      "Durability": "100",
+      "Weight": "1.5",
+      "Stats": {
+          "Stats Needed": "7*/20/0/0",
+          "Stat Bonuses": "E/A/-/-"
+      },
+      "Availability": "Painting Guardian drop",
+      "Special Note": "One and two handed strong attack is replaced by a series of slashes that can be followed up by another slash with an additional input"
+  },
+  {
+      "Image": "quelaag-s-furysword.png",
+      "Name": "Quelaag's Furysword",
+      "Damage": "60/0/180/0  (Normal)",
+      "Durability": "600",
+      "Weight": "3.5",
+      "Stats": {
+          "Stats Needed": "11*/13/0/0",
+          "Stat Bonuses": "E/B/-/-"
+      },
+      "Availability": "Ascension only  Upgrade +10 curved sword (Falchion, Scimitar, etc.) with Soul of Quelaag",
+      "Special Note": "Damage affected by Humanity stat"
+  },
+  {
+      "Image": "scimitar.png",
+      "Name": "Scimitar",
+      "Damage": "80/0/0/0  (Slash)",
+      "Durability": "160",
+      "Weight": "1.5",
+      "Stats": {
+          "Stats Needed": "7*/13/0/0",
+          "Stat Bonuses": "E/B/-/-"
+      },
+      "Availability": "Starting weapon of the Wanderer class  Skeleton (Shield) drop  Sold by Undead Merchant (Male)",
+      "Special Note": "-"
+  },
+  {
+      "Image": "shotel.png",
+      "Name": "Shotel",
+      "Damage": "82/0/0/0  (Slash)",
+      "Durability": "120",
+      "Weight": "2.5",
+      "Stats": {
+          "Stats Needed": "9*/14/0/0",
+          "Stat Bonuses": "E/C/-/-"
+      },
+      "Availability": "Sold by Shiva of the East  Found on corpse in Sen's Fortress",
+      "Special Note": "One handed and two handed strong attack bypasses shields"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+      "Image": "demon-s-great-hammer.png",
+      "Name": "Demon's Great Hammer",
+      "Damage": "138/0/0/0  (Strike)",
+      "Durability": "600",
+      "Weight": "22.0",
+      "Stats": {
+          "Stats Needed": "46*/0/0/0",
+          "Stat Bonuses": "B/-/-/-"
+      },
+      "Availability": "Asylum Demon drop Trade Sack to Snuggly the Crow",
+      "Special note": "-"
+  },
+  {
+      "Image": "dragon-tooth.png",
+      "Name": "Dragon Tooth",
+      "Damage": "290/0/0/0  (Strike)",
+      "Durability": "999",
+      "Weight": "18.0",
+      "Stats": {
+          "Stats Needed": "40*/0/0/0",
+          "Stat Bonuses": "D/-/-/-"
+      },
+      "Availability": "Anor Londo Chest",
+      "Special note": "Raises Fire and Magic defense by 20 points. Never loses durability points."
+  },
+  {
+      "Image": "grant.png",
+      "Name": "Grant",
+      "Damage": "130/130/0/0  Holy 130  (Strike)",
+      "Durability": "600",
+      "Weight": "24.0",
+      "Stats": {
+          "Stats Needed": "50*/0/0/30",
+          "Stat Bonuses": "B/-/-/A"
+      },
+      "Availability": "Paladin Leeroy drop",
+      "Special note": "Two handed strong attack replaced by an energy wave emanating from wielder"
+  },
+  {
+      "Image": "great-club.png",
+      "Name": "Great Club",
+      "Damage": "135/0/0/0  (Strike)",
+      "Durability": "250",
+      "Weight": "12.0",
+      "Stats": {
+          "Stats Needed": "28*/0/0/0",
+          "Stat Bonuses": "B/-/-/-"
+      },
+      "Availability": "Blighttown treasure",
+      "Special note": "-"
+  },
+  {
+      "Image": "large-club.png",
+      "Name": "Large Club",
+      "Damage": "120/0/0/0  Poison 180  (Strike)",
+      "Durability": "250",
+      "Weight": "11.0",
+      "Stats": {
+          "Stats Needed": "26*/0/0/0",
+          "Stat Bonuses": "A/-/-/-"
+      },
+      "Availability": "Infested barbarian drop",
+      "Special note": "Poison build up is 30 per hit and once inflicted does 3 HP per second for 160 seconds. Strong attack is replaced by a dashing horizontal swing."
+  },
+  {
+      "Image": "smough-s-hammer.png",
+      "Name": "Smough's Hammer",
+      "Damage": "300/0/0/0  (Strike)",
+      "Durability": "600",
+      "Weight": "28.0",
+      "Stats": {
+          "Stats Needed": "58*/0/0/0",
+          "Stat Bonuses": "D/-/-/-"
+      },
+      "Availability": "Ascension only. Upgrade +10 blunt weapon with Soul of Smough",
+      "Special note": "One-handed strong attack replaced with a wide horizontal swing. Two-handed strong attack replaced with a jumping attack. Regenerates 10 HP on hit."
+  }
+]
