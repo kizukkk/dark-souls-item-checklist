@@ -1,7 +1,7 @@
 # Dark Souls 1. Item Collection
 Simple SPA based on JS, HTML/CSS that provides collection of Dark Souls 1 items from the Wiki.
 
-Iteam information based on [darksouls.wikidot.com](http://darksouls.wikidot.com/)
+Item information based on [darksouls.wikidot.com](http://darksouls.wikidot.com/)
 
 ## Install
 
@@ -16,3 +16,8 @@ You can also switch between views (list of all items or only received items).
 
 ## Footage
 
+Main Page (Item List)
+<img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/01png.png">
+
+Personal Collection
+<img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/02.png">
