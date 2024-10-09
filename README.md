@@ -1,11 +1,11 @@
 # Dark Souls 1. Item Collection
-Simple SPA based on JS, HTML/CSS that provides collection of Dark Souls 1 items from the Wiki.
+Simple SPA based on JS, HTML/CSS and Node.JS + Express, that provides collection of Dark Souls 1 items from the Wiki.
 
 Item information based on [darksouls.wikidot.com](http://darksouls.wikidot.com/)
 
 ## Install
 
-Copy the repository and start it on a web-server (<i>example VS Code extensions Live-Server</i>).
+Copy the repository and execute `node start` or `node server.js`
 
 There are some issues with CORS, so it must be disabled in the browser for correct functionality
 
