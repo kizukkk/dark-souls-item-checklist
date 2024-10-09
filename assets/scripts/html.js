@@ -9,9 +9,9 @@ const DOMAIN = 'http://darksouls.wikidot.com/';
 
 
 export function fillHtml(data){
-  if (localStorageIsEmpty('mode')){
+  if (localStorageIsEmpty('mode'))
     localStorage.setItem('mode', 'all');
-  }
+  
   const mode = localStorage.getItem('mode');
 
   switch (mode){

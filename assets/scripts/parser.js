@@ -7,6 +7,7 @@ export async function parsItemsAsync(URL) {
     const doc = parser.parseFromString(html, "text/html");
     const tabs = doc.querySelectorAll('div[id^="wiki-tab"]');
     const result = parsingDataFromTables(tabs);
+        
     return result;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -22,6 +23,7 @@ function parsingDataFromTables(tables) {
   
   tables.forEach((tab, index) => {
     const itemTables = tab.querySelector('tbody').querySelector('tbody');
+    
     let itemParams = [];
     let itemTemplate = {}
     let itemList = [];
