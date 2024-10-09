@@ -1,16 +1,16 @@
-import  {parsWeaponAsync} from './parser.js';
+import  {parsItemsAsync} from './parser.js';
 
 const WEAPON_URL = "http://darksouls.wikidot.com/weapons-tabview";
 const TOOLS_URL = 'http://darksouls.wikidot.com/spell-tools-tabview'
 
 //Парсінг даних та запис заголовків у LocalStorage
 export async function fillWeaponLocalStorageAsync() {
-  await parsWeaponAsync(WEAPON_URL).then(result => {
+  await parsItemsAsync(WEAPON_URL).then(result => {
     localStorage.setItem('Weapons Types', Object.keys(result));
     console.log(result)
   });
 
-  await parsWeaponAsync(TOOLS_URL).then(result => {
+  await parsItemsAsync(TOOLS_URL).then(result => {
     let weapons = localStorage.getItem('Weapons Types').split(',')
     weapons.push(Object.keys(result))
     localStorage.setItem('Weapons Types', weapons);
