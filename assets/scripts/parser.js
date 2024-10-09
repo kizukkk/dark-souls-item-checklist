@@ -19,13 +19,7 @@ function getWeaponParams(table){
   let weaponTypeParams = []
 
   table.querySelectorAll('th').forEach(th => {
-    if (th.querySelectorAll('br').length != 0){
-      const firstPart = th.childNodes[0].nodeValue.trim();
-      const secondPart = th.childNodes[2].nodeValue.trim();
-      weaponTypeParams.push(firstPart);
-      weaponTypeParams.push(secondPart);
-      return;
-    }
+    
     let paramText = th.textContent;
     if(paramText == "Icon"){
       paramText = "Image";
@@ -65,8 +59,8 @@ function parsingDataFromTables(tables) {
       if (index == 0) {
         weaponParams = getWeaponParams(tr);
         
-        weaponParams.forEach(i => {
-          if(i == "Stats Needed" || i == "Stat Bonuses"){
+        itemParams.forEach(i => {
+          if(i == "Stats Needed Stat Bonuses"){
             itemPlaceholder["Stats"] = undefined;
             return;
           }
@@ -84,7 +78,7 @@ function parsingDataFromTables(tables) {
           return;
         }
 
-        if(index == weaponParams.indexOf("Stats Needed")){
+        if(index == itemParams.indexOf("Stats Needed Stat Bonuses")){
           const firstPart = td.childNodes[0].nodeValue?.trim();
           const secondPart = td.childNodes[td.childNodes.length - 1].nodeValue?.trim();
           item.Stats = {};
