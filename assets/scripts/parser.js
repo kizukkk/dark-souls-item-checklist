@@ -86,22 +86,22 @@ function getItemData(data, template, params){
   const item = structuredClone(template);
 
   data.querySelectorAll('td').forEach((td, index) => {
-        if (td.querySelector('img')) {
-          const img = td.querySelector('img');
-          item["Image"] = img.getAttribute('alt');
+    if (td.querySelector('img')) {
+      const img = td.querySelector('img');
+      item["Image"] = img.getAttribute('alt');
 
-          return;
-        }
+      return;
+    }
 
     if(index == params.indexOf("Stats Needed Stat Bonuses")){
-          const firstPart = td.childNodes[0].nodeValue?.trim();
-          const secondPart = td.childNodes[td.childNodes.length - 1].nodeValue?.trim();
-          item.Stats = {};
-          item.Stats["Stats Needed"] = firstPart;
-          item.Stats["Stat Bonuses"] = secondPart;
-          return;
-        }
-        
+      const firstPart = td.childNodes[0].nodeValue?.trim();
+      const secondPart = td.childNodes[td.childNodes.length - 1].nodeValue?.trim();
+      item.Stats = {};
+      item.Stats["Stats Needed"] = firstPart;
+      item.Stats["Stat Bonuses"] = secondPart;
+      return;
+    }
+    
     item[Object.keys(template)[index]] = td.textContent.replace(/\n/g, ' ');
 
   });
