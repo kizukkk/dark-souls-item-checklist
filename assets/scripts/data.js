@@ -43,6 +43,5 @@ export async function getWeaponListFromJsonAsync() {
 
 export function localStorageIsEmpty(name){
   const collection = localStorage.getItem(name)
-  console.log(collection)
   return (typeof collection === 'undefined' || collection === null)
 }
