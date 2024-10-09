@@ -9,9 +9,9 @@ const DOMAIN = 'http://darksouls.wikidot.com/';
 
 
 export function fillHtml(data){
-  if (localStorageIsEmpty('mode'))
+  if (localStorageIsEmpty('mode')){
     localStorage.setItem('mode', 'all');
-  
+  }
   const mode = localStorage.getItem('mode');
 
   switch (mode){
@@ -44,6 +44,8 @@ function fillHtml_AllWeapon(data){
 }
 
 function fillHtml_CollectedWeapon(data){ 
+  if(localStorageIsEmpty('collection'))
+    return;
   const collection = localStorage.getItem('collection');
   const arrayCollection = collection.split(',').reverse();
   let outputData = {};
