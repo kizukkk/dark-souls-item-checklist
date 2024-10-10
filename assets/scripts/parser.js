@@ -1,11 +1,12 @@
+import * as jsdom from 'jsdom';
+
 export async function parsItemsAsync(URL) {
   try {
     const response = await fetch(URL);
     
     const html = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, "text/html");
-    const tabs = doc.querySelectorAll('div[id^="wiki-tab"]');
+    const doc = new jsdom.JSDOM(html, {contentType: "text/html"});
+    const tabs = doc.window.document.querySelectorAll('div[id^="wiki-tab"]');
     const result = parsingDataFromTables(tabs);
         
     return result;
@@ -88,7 +89,7 @@ function getItemData(data, template, params){
   data.querySelectorAll('td').forEach((td, index) => {
     if (td.querySelector('img')) {
       const img = td.querySelector('img');
-      item["Image"] = img.getAttribute('alt');
+      item["Image"] = img.getAttribute('src');
 
       return;
     }
