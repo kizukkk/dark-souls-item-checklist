@@ -1,47 +1,46 @@
 import  {parsItemsAsync} from './parser.js';
+import {writeFile} from 'fs';
+import fs from "fs";
+
+const PATH = './assets/data'
 
 const WEAPON_URL = "http://darksouls.wikidot.com/weapons-tabview";
 const TOOLS_URL = 'http://darksouls.wikidot.com/spell-tools-tabview'
 
-//Парсінг даних та запис заголовків у LocalStorage
-export async function fillWeaponLocalStorageAsync() {
-  await parsItemsAsync(WEAPON_URL).then(result => {
-    localStorage.setItem('Weapons Types', Object.keys(result));
-    console.log(result)
-  });
+async function writeJsonToServerStorage(items, name){
 
-  await parsItemsAsync(TOOLS_URL).then(result => {
-    let weapons = localStorage.getItem('Weapons Types').split(',')
-    weapons.push(Object.keys(result))
-    localStorage.setItem('Weapons Types', weapons);
-    localStorage.setItem('Tools Types', Object.keys(result));
-    console.log(result)
-  });
+  console.log('Start data writing...')
+  Object.keys(items).forEach((item, index) => {
+    const dir = `${PATH}/${name}`;
+    if (!fs.existsSync(dir)){
+      fs.mkdirSync(dir);
+    }
+    const path = `${PATH}/${name}/${item}.json`; 
+    const info = `item ${item} with path ${path}`;
+    console.log(`\t[${index}] Write file: ${info}`);
 
-
+    writeFile(path, JSON.stringify(items[item]), (error) => {
+      if(error !== null){
+        console.log(`Write file error: ${info}`);
+        console.log(error)
+      }
+      return;
+    })
+  })
 }
 
-//Отримати список всієї зброї з LocalStorage
-export async function getWeaponListFromJsonAsync() {
-  const weaponsTypes = localStorage.getItem("Weapons Types").split(',');
-  let weaponsList = {};
-
-  const promises = weaponsTypes.map(weaponType => {
-    return fetch(`../assets/data/${weaponType}.json`)
-      .then(response => response.json())
-      .then(data => weaponsList[weaponType] = data)
-      .catch(error => {
-        console.log("Помилка обробки отримання даних з носія!")
-        console.log(error);
-      });
+export async function updateAllCollectionData() {
+  updateItemInfo(WEAPON_URL).then(data => {
+    writeJsonToServerStorage(data, 'Weapons').then(
+      console.log("Weapon data is writed!"))
   });
-
-  await Promise.all(promises);
-
-  return weaponsList;
+  updateItemInfo(TOOLS_URL).then(data => {
+    writeJsonToServerStorage(data, 'Spell-Tools').then(
+      console.log("Spell and Tools data is writed!"))
+  });  
 }
 
-export function localStorageIsEmpty(name){
-  const collection = localStorage.getItem(name)
-  return (typeof collection === 'undefined' || collection === null)
+async function updateItemInfo(URL){
+  const result = await parsItemsAsync(URL)
+  return result;
 }
