@@ -1,21 +1,21 @@
-import http from "node:http";
+import {updateAllCollectionData} from './assets/scripts/data.js';
 import {fileURLToPath} from 'url';
-import fs from "fs";
 import express from "express";
 import path from "node:path";
+import fs from "fs";
 
 const PORT = 3000;
 const APP = express()
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-APP.use('/assets', express.static(path.join(__dirname, '/assets')));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
+// Server static files
+APP.use('/public', express.static(path.join(__dirname, 'public')));
 
 
-APP.get('/', (req, res) => {
+// Server endpoints
+APP.get('/', (req, res, next) => {
   res.writeHeader(200, {"Content-Type": "text/html"});
 
   fs.readFile('./index.html', (err, html) => {
@@ -32,6 +32,22 @@ APP.get('/', (req, res) => {
   })
 })
 
+APP.post('/data/update', (req, res, next) => {
+  res.writeHeader(200)
+  updateAllCollectionData().then(
+    console.log('All collections updated!')
+  )
+  .catch((error) => {
+    console.log('Fatal error on collections update!');
+    console.log(error);
+    res.writeHeader(500)
+  })
+  res.end();
+})
+
+
+// Another staff
 APP.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
+
