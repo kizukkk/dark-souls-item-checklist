@@ -1,4 +1,4 @@
-import {updateAllCollectionData} from './assets/scripts/data.js';
+import {updateAllCollectionData, readJsonFromServerStorage} from './assets/scripts/data.js';
 import {fileURLToPath} from 'url';
 import express from "express";
 import path from "node:path";
@@ -6,6 +6,11 @@ import fs from "fs";
 
 const PORT = 3000;
 const APP = express()
+
+const ITEM_CLASS = {
+  'weapons': 'Weapons',
+  'tools'  : 'Spell-Tools'
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -43,6 +48,22 @@ APP.post('/data/update', (req, res, next) => {
     res.writeHeader(500)
   })
   res.end();
+})
+
+APP.get('/data/:itemClass', async (req, res, next) => {
+  const itemClassName = req.params.itemClass;
+
+  if (itemClassName in ITEM_CLASS){
+    res.writeHeader(200, {'Content-Type' : 'application/json'})
+    readJsonFromServerStorage(ITEM_CLASS[itemClassName]).then(data => {
+      const result = data.map(item => {return JSON.parse(item)})
+      res.end(JSON.stringify(result, null, 3))
+    });
+  } else{
+    res.writeHeader(400, {'Content-type' : 'text/html'})
+    res.end('This collection do not exist!')
+  }
+  
 })
 
 
