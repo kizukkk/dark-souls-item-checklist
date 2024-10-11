@@ -1,6 +1,8 @@
 import  {parsItemsAsync} from './parser.js';
 import {writeFile} from 'fs';
+import { readdir, readFile} from 'node:fs/promises';
 import fs from "fs";
+import path from 'path';
 
 const PATH = './assets/data'
 
