@@ -29,6 +29,20 @@ async function writeJsonToServerStorage(items, name){
   })
 }
 
+export async function readJsonFromServerStorage(itemClassName) {
+  const resourcePath = `${PATH}/${itemClassName}`;
+
+  const itemList = await readdir(resourcePath);
+
+  const items = itemList.map(async (file) => {
+    return await readFile(path.join(resourcePath, file), 'utf-8')
+  });
+
+  const result = await Promise.all(items);
+  
+  return result;
+}
+
 export async function updateAllCollectionData() {
   updateItemInfo(WEAPON_URL).then(data => {
     writeJsonToServerStorage(data, 'Weapons').then(
