@@ -66,6 +66,21 @@ APP.get('/data/:itemClass', async (req, res, next) => {
   
 })
 
+APP.get('/data', async (req, res, next) => {
+  res.writeHeader(200, {'Content-Type' : 'application/json'});
+
+  let result = {}
+  const items = Object.keys(ITEM_CLASS).map(async (name) => {
+    return await readJsonFromServerStorage(ITEM_CLASS[name]).then(data => {
+      result[name] = (data.map(item => {return JSON.parse(item)}))
+    });
+  })
+
+  await Promise.all(items);
+
+  res.end(JSON.stringify(result, null, 3))
+})
+
 
 // Another staff
 APP.listen(PORT, () => {
