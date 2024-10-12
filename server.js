@@ -72,13 +72,16 @@ APP.get('/data', async (req, res, next) => {
   let result = {}
   const items = Object.keys(ITEM_CLASS).map(async (name) => {
     return await readJsonFromServerStorage(ITEM_CLASS[name]).then(data => {
-      result[name] = (data.map(item => {return JSON.parse(item)}))
+      result[name] = data.map(item => {return JSON.parse(item)})
     });
   })
 
   await Promise.all(items);
-
-  res.end(JSON.stringify(result, null, 3))
+  const sorted = Object.keys(ITEM_CLASS).map(itemClassName => {
+    return {[itemClassName] : result[itemClassName]} 
+  })
+  
+  res.end(JSON.stringify(sorted, null, 3))
 })
 
 
