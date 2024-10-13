@@ -27,7 +27,8 @@ export function fillHtml(data){
 export function resetHtml(){
   const toRemove = document.querySelectorAll('body > div');
 
-  toRemove.forEach(element => element.remove());
+  toRemove.forEach(item => item.remove());
+
   fillWeaponLocalStorageAsync().then(
     getWeaponListFromJsonAsync().then(weapons => fillHtml(weapons))
   );
@@ -47,10 +48,10 @@ function fillHtml_CollectedWeapon(data){
   arrayCollection.forEach(weaponNameInCollection => {
     Object.keys(data).forEach(weaponClassName => {
       Object.keys(data[weaponClassName]).forEach(weapon => {
-        const weaponName = data[weaponClassName][weapon].Name
+        const itemName = data[weaponClassName][weapon].Name
           .replaceAll(' ', '-')
           .toLowerCase();
-        if(weaponName === weaponNameInCollection){
+        if(itemName === weaponNameInCollection){
           if(weaponClassName in outputData === false){
             outputData[weaponClassName] = {};
           }
@@ -63,9 +64,9 @@ function fillHtml_CollectedWeapon(data){
   insertElementsToHtml(outputData);
 }
 
-function insertElementsToHtml(elements){
-  const elementTemplate = document.getElementById('weapon-template')
-  const classTemplate = document.getElementById('weapon-class-template')
+function insertElementsToHtml(data){
+  const itemTemplate = document.getElementById('item-template')
+  const categoryTemplate = document.getElementById('category-template')
 
   Object.keys(elements).forEach(weapon_class => {
     const classClone = classTemplate.content.cloneNode(true);
