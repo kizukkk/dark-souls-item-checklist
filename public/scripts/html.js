@@ -14,7 +14,7 @@ export function fillHtml(data){
       fillHtml_AllWeapon(data);
       break;
     case 'collection':
-      document.querySelector('#mode').innerText = 'Weapon List'
+      document.querySelector('#mode').innerText = 'Collection List'
       fillHtml_CollectedWeapon(data)
       break;
   }
