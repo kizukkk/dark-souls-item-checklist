@@ -1,12 +1,6 @@
-import {localStorageIsEmpty, getWeaponListFromJsonAsync, fillWeaponLocalStorageAsync} 
-from '../../assets/scripts/data.js';
-import {addCollectionEvent, addUpgradEvent} 
-from './events.js';
+import {addCollectionEvent, addUpgradEvent} from './events.js'
 
-
-const SOURCE_IMG_URL = 'http://darksouls.wikidot.com/local--files/';
-const DOMAIN = 'http://darksouls.wikidot.com/';
-
+const ITEM_CLASS = ['weapons', 'tools']
 
 export function fillHtml(data){
   if (localStorageIsEmpty('mode'))
