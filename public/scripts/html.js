@@ -40,7 +40,35 @@ export function updateCollectionVisible(){
     return {[name] : JSON.parse(localStorage.getItem(name))}
   })
 
-  
+  const mode = localStorage.getItem('mode');
+
+  // TODO: рефакторінг (створити окремі методи)
+  if(mode == 'collection'){
+    const collection = localStorage.getItem('collection').split(',');
+    const allNodes = document.querySelectorAll('body > div')
+    allNodes.forEach(cat => {
+      const contentElements = Array.from(cat.querySelectorAll('#content > div'));
+      const items = contentElements.map(div => div.classList[1])
+      const any = collection.filter(item => items.includes(item))
+      if(any[0] != undefined){
+        const toHide = contentElements.filter(element => !any.includes(element.classList[1]))
+        toHide.map(e => e.style.display = 'none')
+      }else{
+        cat.style.display = "none";
+      }
+    })
+  }
+
+  if(mode == 'all'){
+    const allNodes = document.querySelectorAll('body > div')
+    
+    allNodes.forEach(cat => {
+      cat.style.display = ''
+
+      Array.from(cat.querySelectorAll('#content > div')).map(item => item.style.display = '')
+    })
+  }
+
 }
 
 function fillHtml_AllWeapon(data){
