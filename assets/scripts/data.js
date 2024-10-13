@@ -37,11 +37,11 @@ export async function readJsonFromServerStorage(itemClassName) {
   const itemList = await readdir(resourcePath);
 
   const items = itemList.map(async (file) => {
-    return await readFile(path.join(resourcePath, file), 'utf-8')
+    const name = file.replaceAll('.json', '');
+    return {[name] : JSON.parse(await readFile(path.join(resourcePath, file), 'utf-8'))}
   });
 
   const result = await Promise.all(items);
-  
   return result;
 }
 
