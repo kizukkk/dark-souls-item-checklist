@@ -1,18 +1,14 @@
-import { fillHtml } from './html.js';
-import {getWeaponListFromJsonAsync, fillWeaponLocalStorageAsync} from '../../assets/scripts/data.js'
+import { fillHtml, updateCollectionVisible} from './html.js';
 import {addModeSwitchEvent} from './events.js'
 
+const HOST = 'http://localhost:3000/'
 
 //Перша ініціалізація
 {
-  fillWeaponLocalStorageAsync()
-    .then(
-      getWeaponListFromJsonAsync()
-        .then(weapons => {
-          fillHtml(weapons);
-          addModeSwitchEvent();
-      })
-  );
+  fetch(HOST + 'data')
+    .then(response => response.json())
+    .then(data => data.map(collection => fillHtml(collection)))
+  addModeSwitchEvent();
 }
 
 
