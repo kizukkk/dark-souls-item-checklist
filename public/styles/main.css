@@ -43,7 +43,7 @@ header{
   align-items: center;
   height: 100px;
   margin: 0 75px;
-  padding-bottom: 15px;
+  padding: 20px 0px;
 
   #mode{
     cursor: pointer;
@@ -60,7 +60,7 @@ header{
       cursor: pointer;
       margin-left: 4vh;
       /* text-decoration-line: line-through; */
-      font-size: 24px;
+      font-size: 38px;
     }
   }
   
@@ -136,7 +136,7 @@ header{
 
 
 
-.weapon-class-name {
+.category-title {
   font-weight: 600;
   font-size: 38px;
 
@@ -145,14 +145,14 @@ header{
   align-items: center;
   text-align: center;
 }
-.weapon-class-name::before, .weapon-class-name::after {
+.category-title::before, .category-title::after {
   content: '';
   flex: 1;
   border-bottom: 3px solid #000;
 }
-.weapon-class-name:not(:empty)::before {
+.category-title:not(:empty)::before {
   margin-right: 1em;
 }
-.weapon-class-name:not(:empty)::after {
+.category-title:not(:empty)::after {
   margin-left: 1em;
 }
