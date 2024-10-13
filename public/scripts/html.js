@@ -15,13 +15,10 @@ export function fillHtml(data){
       break;
     case 'collection':
       document.querySelector('#mode').innerText = 'Collection List'
-      fillHtml_CollectedWeapon(data)
+      fillHtml_AllWeapon(data);
+      updateCollectionVisible();
       break;
   }
-
-  addCollectionEvent();
-  addUpgradEvent();
-  updateCollectionVisible();
   
 }
 
