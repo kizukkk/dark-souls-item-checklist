@@ -1,5 +1,5 @@
 import { fillHtml, updateCollectionVisible} from './html.js';
-import {addModeSwitchEvent} from './events.js'
+import {addModeSwitchEvent, addCollectionEvent} from './events.js'
 
 const HOST = 'http://localhost:3000/'
 
@@ -7,8 +7,12 @@ const HOST = 'http://localhost:3000/'
 {
   fetch(HOST + 'data')
     .then(response => response.json())
-    .then(data => data.map(collection => fillHtml(collection)))
+    .then(data => {
+      data.map(collection => fillHtml(collection))
+      addCollectionEvent();
+    })
   addModeSwitchEvent();
+  
 }
 
 
