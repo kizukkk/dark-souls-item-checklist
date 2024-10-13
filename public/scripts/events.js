@@ -1,19 +1,20 @@
-
-import {resetHtml} from './html.js';
+import {updateCollectionVisible} from './html.js';
 
 export function addCollectionEvent(){
+
   document.querySelectorAll(".collection").forEach(button => {
     button.addEventListener('click', event => {
+
       const container = event.target.closest('.item');
       const weaponName = container.classList[1];
-
       const collection = localStorage.getItem("collection");
       const upgrade = localStorage.getItem("upgrade");
 
       const collectionIsEmpty = (typeof collection !== 'undefined' & collection !== null)
       const upgradeIsEmpty = (typeof upgrade !== 'undefined' & upgrade !== null)
 
-      let newCollection = (collectionIsEmpty == 0) ? [] : collection.split(',');
+      let newCollection = (collectionIsEmpty == 0 || collection.split(',')[0] === '') ? [] 
+      : collection.split(',');
 
       const isCollected = collectionIsEmpty && collection.split(',').includes(weaponName)
 
@@ -102,7 +103,7 @@ export function addModeSwitchEvent(){
         localStorage.setItem('mode', 'all');
         break;
     }
-    resetHtml();
+    updateCollectionVisible();
     
   })
 }
