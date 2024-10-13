@@ -21,6 +21,7 @@ export function fillHtml(data){
 
   addCollectionEvent();
   addUpgradEvent();
+  updateCollectionVisible();
   
 }
 
@@ -32,6 +33,17 @@ export function resetHtml(){
   fillWeaponLocalStorageAsync().then(
     getWeaponListFromJsonAsync().then(weapons => fillHtml(weapons))
   );
+}
+
+export function updateCollectionVisible(){
+  const flags = ITEM_CLASS.map(name => {
+    if(localStorageIsEmpty(name)){
+      localStorage.setItem(name, true)
+    }
+    return {[name] : JSON.parse(localStorage.getItem(name))}
+  })
+
+  
 }
 
 function fillHtml_AllWeapon(data){
@@ -68,27 +80,29 @@ function insertElementsToHtml(data){
   const itemTemplate = document.getElementById('item-template')
   const categoryTemplate = document.getElementById('category-template')
 
-  Object.keys(elements).forEach(weapon_class => {
-    const classClone = classTemplate.content.cloneNode(true);
+  const collectionName = Object.keys(data)[0]
+  const collection = data[collectionName]
+
+  const categories = Object.keys(collection);
+  categories.forEach(category => {
+    const categoryName = Object.keys(collection[category])[0];
+
+    const classClone = categoryTemplate.content.cloneNode(true);
     const container = classClone.getElementById('content');
-    classClone.querySelector('h1').innerHTML  = weapon_class;
 
-    Object.keys(elements[weapon_class]).forEach(weapon => {
-      const elementClone = elementTemplate.content.cloneNode(true);
+    classClone.querySelector('h1').innerHTML = categoryName;
 
-      let className = (weapon_class == "Straight Swords") ?
-          weapon_class.toLowerCase().replace(' ', ''):
-          weapon_class.toLowerCase().replace(' ', '-');
-        
-      const weaponImageName = elements[weapon_class][weapon].Image;
-      const weaponName = elements[weapon_class][weapon].Name.toLowerCase().replace(/ /g, '-');
-      const imgURL = `${SOURCE_IMG_URL}/${className}/${weaponImageName}`
+    const itemList = collection[category][categoryName];
+    itemList.forEach(item => {
+      const itemElement = itemTemplate.content.cloneNode(true);
+
+      const itemName = item.Name.toLowerCase().replace(/ /g, '-');
       
-      elementClone.querySelector('img').src = imgURL;
-      elementClone.querySelector('img').alt = weaponImageName;
-      elementClone.querySelector(".title").innerText = elements[weapon_class][weapon].Name;
-      elementClone.querySelector('a').href = `${DOMAIN}${weaponName}`;
-      elementClone.querySelector('#drop').innerText = elements[weapon_class][weapon].Availability;
+      itemElement.querySelector('img').src = item.Image;
+      itemElement.querySelector('img').alt = itemName.toLowerCase();
+      itemElement.querySelector(".title").innerText = item.Name;
+      // itemElement.querySelector('a').href = `${DOMAIN}${itemName}`;
+      itemElement.querySelector('#drop').innerText = item.Availability;
 
       //!РЕФАКТОРІНГ!
       const collection = localStorage.getItem("collection");
@@ -97,11 +111,11 @@ function insertElementsToHtml(data){
       const collectionIsEmpty = (typeof collection !== 'undefined' & collection !== null)
       const upgradeIsEmpty = (typeof upgrade !== 'undefined' & upgrade !== null)
 
-      const isCollected = collectionIsEmpty && collection.split(',').includes(weaponName)
-      const isUpgraded = collectionIsEmpty && upgradeIsEmpty && upgrade.split(',').includes(weaponName)
+      const isCollected = collectionIsEmpty && collection.split(',').includes(itemName)
+      const isUpgraded = collectionIsEmpty && upgradeIsEmpty && upgrade.split(',').includes(itemName)
 
       {
-        let button = elementClone.querySelector('.collection');
+        let button = itemElement.querySelector('.collection');
         if(isCollected){
             button.classList.add("collected")
             button.innerText = 'Remove'
@@ -113,7 +127,7 @@ function insertElementsToHtml(data){
       }
 
       {
-        let button = elementClone.querySelector('.upgrade');
+        let button = itemElement.querySelector('.upgrade');
         if(isUpgraded){
             button.classList.add("upgraded")
             button.innerText = 'Downgrade'
@@ -127,15 +141,21 @@ function insertElementsToHtml(data){
 
       const elementContainer = document.createElement('div')
       elementContainer.classList.add("item")
-      elementContainer.classList.add(`${weaponName}`)
-      elementContainer.appendChild(elementClone)
+      elementContainer.classList.add(`${itemName}`)
+      elementContainer.appendChild(itemElement)
 
       container.appendChild(elementContainer);
         
     })
     const elementContainer = document.createElement('div')
-    elementContainer.id = (`${weapon_class.toLowerCase().replace(/ /g, '-')}`);
+    elementContainer.id = (`${categoryName.toLowerCase().replace(/ /g, '-')}`);
+    elementContainer.classList.add(collectionName)
     elementContainer.appendChild(classClone)
     document.body.appendChild(elementContainer);
   });
+}
+
+function localStorageIsEmpty(name){
+  const collection = localStorage.getItem(name)
+  return (typeof collection === 'undefined' || collection === null)
 }
