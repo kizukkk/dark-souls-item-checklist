@@ -1,4 +1,4 @@
-import {updateCollectionVisible} from './html.js';
+import {updateCollectionVisible, updateVisible} from './html.js';
 
 export function addCollectionEvent(){
 
@@ -106,6 +106,17 @@ export function addModeSwitchEvent(){
     updateCollectionVisible();
     
   })
+}
+
+export function addVisibleEvent(){
+  const switcher = document.querySelectorAll('#collections > li');
+  switcher.forEach(b => b.addEventListener('click', (event) => {
+    const ctgName = event.target.id;
+    const status = JSON.parse(localStorage.getItem(ctgName))
+    localStorage.setItem(ctgName, !status);
+
+    updateVisible()
+  }))
 }
 
 
