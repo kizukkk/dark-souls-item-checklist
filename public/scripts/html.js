@@ -1,6 +1,7 @@
 import {addCollectionEvent, addUpgradEvent} from './events.js'
 
-const ITEM_CLASS = ['weapons', 'tools']
+const WIKI_DOMAIN = 'http://darksouls.wikidot.com/'
+const ITEM_CLASS = ['weapons', 'tools', 'shields', 'armors']
 
 export function fillHtml(data){
   if (localStorageIsEmpty('mode'))
@@ -126,7 +127,7 @@ function insertElementsToHtml(data){
       itemElement.querySelector('img').src = item.Image;
       itemElement.querySelector('img').alt = itemName.toLowerCase();
       itemElement.querySelector(".title").innerText = item.Name;
-      // itemElement.querySelector('a').href = `${DOMAIN}${itemName}`;
+      itemElement.querySelector('a').href = `${WIKI_DOMAIN}/${itemName}`;
       itemElement.querySelector('#drop').innerText = item.Availability;
 
       //!РЕФАКТОРІНГ!
