@@ -93,6 +93,12 @@ header{
     height: 180px;
   }
 
+  #drop{
+    max-height: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+
   #button-container{
     margin-top: 10px;
     display: flex;
