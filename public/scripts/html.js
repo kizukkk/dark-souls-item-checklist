@@ -20,7 +20,29 @@ export function fillHtml(data){
       updateCollectionVisible();
       break;
   }
-  
+}
+
+export function updateVisible(){
+  const flags = ITEM_CLASS.map(name => {
+    if(localStorageIsEmpty(name)){
+      localStorage.setItem(name, true)
+    }
+    return {[name] : JSON.parse(localStorage.getItem(name))}
+  })
+
+  flags.forEach(ctg => {
+    const ctgName = Object.keys(ctg)[0];
+    const item = document.querySelector(`#collections > #${ctgName}`)
+    const ctgContainers = document.querySelectorAll(`body > .${ctgName}`)
+    if(!ctg[ctgName]){
+      item.style.textDecoration = 'line-through';
+      ctgContainers.forEach(div => div.style.display = 'none');
+    }
+    else{
+      item.style.textDecoration = '';
+      ctgContainers.forEach(div => div.style.display = '');
+    }
+  })
 }
 
 export function resetHtml(){
@@ -34,12 +56,6 @@ export function resetHtml(){
 }
 
 export function updateCollectionVisible(){
-  const flags = ITEM_CLASS.map(name => {
-    if(localStorageIsEmpty(name)){
-      localStorage.setItem(name, true)
-    }
-    return {[name] : JSON.parse(localStorage.getItem(name))}
-  })
 
   const mode = localStorage.getItem('mode');
 
