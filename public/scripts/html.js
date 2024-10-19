@@ -2,25 +2,20 @@ const WIKI_DOMAIN = 'http://darksouls.wikidot.com/'
 const ITEM_CLASS = ['weapons', 'tools', 'shields', 'armors']
 
 export function fillHtml(data){
+  insertElementsToHtml(data);
+}
+
+export function preRender(){
   if (localStorageIsEmpty('mode'))
     localStorage.setItem('mode', 'all');
   
-  const mode = localStorage.getItem('mode');
-
-  switch (mode){
-    case 'all':
-      document.querySelector('#mode').innerText = 'Out of Collection';
-      fillHtml_AllWeapon(data);
-      break;
-    case 'collection':
-      document.querySelector('#mode').innerText = 'Collection List'
-      fillHtml_AllWeapon(data);
-      updateCollectionVisible();
-      break;
-  }
+  //Порядок рендеру
+  renderModeSwitcher()
+  renderViewMode()
+  renderItemCategory()
 }
 
-export function updateVisible(){
+export function renderItemCategory(){
   const flags = ITEM_CLASS.map(name => {
     if(localStorageIsEmpty(name)){
       localStorage.setItem(name, true)
@@ -81,37 +76,19 @@ export function renderViewMode(){
       Array.from(cat.querySelectorAll('#content > div')).map(item => item.style.display = '')
     })
   }
-
 }
 
-function fillHtml_AllWeapon(data){
-  insertElementsToHtml(data);
-}
+function renderModeSwitcher(){
+  const mode = localStorage.getItem('mode');
 
-function fillHtml_CollectedWeapon(data){ 
-  if(localStorageIsEmpty('collection'))
-    return;
-  const collection = localStorage.getItem('collection');
-  const arrayCollection = collection.split(',').reverse();
-  let outputData = {};
-
-  arrayCollection.forEach(weaponNameInCollection => {
-    Object.keys(data).forEach(weaponClassName => {
-      Object.keys(data[weaponClassName]).forEach(weapon => {
-        const itemName = data[weaponClassName][weapon].Name
-          .replaceAll(' ', '-')
-          .toLowerCase();
-        if(itemName === weaponNameInCollection){
-          if(weaponClassName in outputData === false){
-            outputData[weaponClassName] = {};
-          }
-          outputData[weaponClassName][weapon] = data[weaponClassName][weapon];
+  switch (mode){
+    case 'all':
+      document.querySelector('#mode').innerText = 'Out of Collection';
+      break;
+    case 'collection':
+      document.querySelector('#mode').innerText = 'Collection List'
+      break;
         }
-      })
-    })
-  })
-  
-  insertElementsToHtml(outputData);
 }
 
 function insertElementsToHtml(data){
