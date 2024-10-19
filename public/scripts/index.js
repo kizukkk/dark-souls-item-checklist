@@ -1,4 +1,4 @@
-import { fillHtml, updateVisible} from './html.js';
+import { fillHtml, preRender } from './html.js';
 import {addModeSwitchEvent, addCollectionEvent, addUpgradEvent, addVisibleEvent} from './events.js'
 
 const HOST = 'http://localhost:3000/'
@@ -11,7 +11,7 @@ const HOST = 'http://localhost:3000/'
       data.map(collection => fillHtml(collection))
       addCollectionEvent();
       addUpgradEvent();
-      updateVisible();
+      preRender()
     })
   addModeSwitchEvent();
   addVisibleEvent();
