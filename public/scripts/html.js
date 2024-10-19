@@ -11,7 +11,7 @@ export function fillHtml(data){
 
   switch (mode){
     case 'all':
-      document.querySelector('#mode').innerText = 'Personal Collection';
+      document.querySelector('#mode').innerText = 'Out of Collection';
       fillHtml_AllWeapon(data);
       break;
     case 'collection':
@@ -43,6 +43,7 @@ export function updateVisible(){
       ctgContainers.forEach(div => div.style.display = '');
     }
   })
+  updateCollectionVisible()
 }
 
 export function resetHtml(){
@@ -67,8 +68,15 @@ export function updateCollectionVisible(){
       const contentElements = Array.from(cat.querySelectorAll('#content > div'));
       const items = contentElements.map(div => div.classList[1])
       const any = collection.filter(item => items.includes(item))
+      const contentCount = cat.querySelectorAll('#content > div').length;
       if(any[0] != undefined){
-        const toHide = contentElements.filter(element => !any.includes(element.classList[1]))
+        const toHide = contentElements.filter(element => any.includes(element.classList[1]))
+        if(contentCount == toHide.length){
+          console.log(`${contentCount} and ${toHide.length}`)
+
+          document.body.querySelector(`#${cat.id}`).style.display = "none";
+
+        }
         toHide.map(e => e.style.display = 'none')
       }else{
         cat.style.display = "none";
