@@ -7,7 +7,13 @@ import fs from "fs";
 const PATH = './assets/data'
 
 const WEAPON_URL = "http://darksouls.wikidot.com/weapons-tabview";
-const TOOLS_URL = 'http://darksouls.wikidot.com/spell-tools-tabview'
+const TOOLS_URL = 'http://darksouls.wikidot.com/spell-tools-tabview';
+const SPELLS_URL = {
+  'Pyromancies' : 'http://darksouls.wikidot.com/pyromancies',
+  'Sorceries' : 'http://darksouls.wikidot.com/sorceries',
+  'Miracles' : 'http://darksouls.wikidot.com/miracles'
+}
+
 
 async function writeJsonToServerStorage(items, name){
 
