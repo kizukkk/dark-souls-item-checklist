@@ -1,8 +1,8 @@
-import  {parsItemsAsync} from './parser.js';
-import {writeFile} from 'fs';
 import { readdir, readFile} from 'node:fs/promises';
-import fs from "fs";
+import  {parsItemsFromMultiTableViewAsync, parsItemsFromSingleTableViewAsync} from './parser.js';
+import {writeFile} from 'fs';
 import path from 'path';
+import fs from "fs";
 
 const PATH = './assets/data'
 
