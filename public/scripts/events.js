@@ -1,4 +1,4 @@
-import {updateCollectionVisible, updateVisible} from './html.js';
+import {renderViewMode, renderItemCategory} from './html.js';
 
 export function addCollectionEvent(){
 
@@ -103,7 +103,7 @@ export function addModeSwitchEvent(){
         localStorage.setItem('mode', 'all');
         break;
     }
-    updateCollectionVisible();
+    renderViewMode();
     
   })
 }
@@ -115,7 +115,7 @@ export function addVisibleEvent(){
     const status = JSON.parse(localStorage.getItem(ctgName))
     localStorage.setItem(ctgName, !status);
 
-    updateVisible()
+    renderItemCategory()
   }))
 }
 
