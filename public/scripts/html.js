@@ -60,8 +60,6 @@ export function renderViewMode(){
           document.body.querySelector(`#${cat.id}`).style.display = "none";
         }
         toHide.map(e => e.style.display = 'none')
-      }else{
-        cat.style.display = "none";
       }
     })
   }
