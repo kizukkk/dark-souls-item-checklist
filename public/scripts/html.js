@@ -38,7 +38,7 @@ export function renderItemCategory(){
   })
 
   if(localStorage.getItem('mode') == 'collection'){
-    updateModeVisible();
+    renderViewMode();
   }
 }
 
@@ -87,7 +87,7 @@ function renderModeSwitcher(){
     case 'collection':
       document.querySelector('#mode').innerText = 'Collection List'
       break;
-        }
+  }
 }
 
 function insertElementsToHtml(data){
