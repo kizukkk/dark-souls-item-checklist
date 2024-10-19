@@ -1,5 +1,3 @@
-import {addCollectionEvent, addUpgradEvent} from './events.js'
-
 const WIKI_DOMAIN = 'http://darksouls.wikidot.com/'
 const ITEM_CLASS = ['weapons', 'tools', 'shields', 'armors']
 
