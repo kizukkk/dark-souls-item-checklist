@@ -9,7 +9,8 @@ const APP = express()
 
 const ITEM_CLASS = {
   'weapons': 'Weapons',
-  'tools'  : 'Spell-Tools'
+  'tools'  : 'Spell-Tools',
+  'spells' : 'Spells'
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
