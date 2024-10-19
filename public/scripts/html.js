@@ -45,7 +45,6 @@ export function renderItemCategory(){
 export function renderViewMode(){
 
   const mode = localStorage.getItem('mode');
-
   // TODO: рефакторінг (створити окремі методи)
   if(mode == 'collection'){
     const collection = localStorage.getItem('collection').split(',');
@@ -58,10 +57,7 @@ export function renderViewMode(){
       if(any[0] != undefined){
         const toHide = contentElements.filter(element => any.includes(element.classList[1]))
         if(contentCount == toHide.length){
-          console.log(`${contentCount} and ${toHide.length}`)
-
           document.body.querySelector(`#${cat.id}`).style.display = "none";
-
         }
         toHide.map(e => e.style.display = 'none')
       }else{
