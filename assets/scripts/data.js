@@ -52,17 +52,39 @@ export async function readJsonFromServerStorage(itemClassName) {
 }
 
 export async function updateAllCollectionData() {
-  updateItemInfo(WEAPON_URL).then(data => {
+  updateMultItemInfo(WEAPON_URL).then(data => {
     writeJsonToServerStorage(data, 'Weapons').then(
       console.log("Weapon data is writed!"))
   });
-  updateItemInfo(TOOLS_URL).then(data => {
+  updateMultItemInfo(TOOLS_URL).then(data => {
     writeJsonToServerStorage(data, 'Spell-Tools').then(
       console.log("Spell and Tools data is writed!"))
-  });  
+  });
+  
+  //TODO : Зменьшити повторення (об'єднати)
+  updateSinglItemInfo(SPELLS_URL['Pyromancies']).then(data => {
+    writeJsonToServerStorage({'Pyromancies' : data}, 'Spells').then(
+      console.log("Pyromancies data is writed!"))
+  });
+
+  updateSinglItemInfo(SPELLS_URL['Sorceries']).then(data => {
+    writeJsonToServerStorage({'Sorceries' : data}, 'Spells').then(
+      console.log("Sorceries data is writed!"))
+  });
+
+  updateSinglItemInfo(SPELLS_URL['Miracles']).then(data => {
+    writeJsonToServerStorage({'Miracles' : data}, 'Spells').then(
+      console.log("Miracles data is writed!"))
+  });
+
 }
 
-async function updateItemInfo(URL){
-  const result = await parsItemsAsync(URL)
+async function updateSinglItemInfo(URL) {
+  const result = await parsItemsFromSingleTableViewAsync(URL);
+  return result;
+}
+
+async function updateMultItemInfo(URL) {
+  const result = await parsItemsFromMultiTableViewAsync(URL);
   return result;
 }

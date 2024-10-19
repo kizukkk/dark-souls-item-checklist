@@ -1,9 +1,8 @@
 import * as jsdom from 'jsdom';
 
-export async function parsItemsAsync(URL) {
+export async function parsItemsFromMultiTableViewAsync(URL) {
   try {
-    const response = await fetch(URL);
-    
+    const response = await fetch(URL)    
     const html = await response.text();
     const doc = new jsdom.JSDOM(html, {contentType: "text/html"});
     const tabs = doc.window.document.querySelectorAll('div[id^="wiki-tab"]');
@@ -12,6 +11,20 @@ export async function parsItemsAsync(URL) {
     return result;
   } catch (error) {
     console.error("Error fetching data:", error);
+    return [];
+  }
+}
+
+export async function parsItemsFromSingleTableViewAsync(URL) {
+  try {
+    const response = await fetch(URL)    
+    const html = await response.text();
+    const doc = new jsdom.JSDOM(html, {contentType: "text/html"});
+    const result = parsingDataFromTable(doc.window.document.querySelectorAll('table[class^="wiki"]')[0]);
+        
+    return result;
+  } catch (error) {
+    console.error(`Error fetching data (${URL}):`, error);
     return [];
   }
 }
@@ -54,6 +67,31 @@ function parsingDataFromTables(tables) {
   });
 
   return itemListByClass;
+}
+
+function parsingDataFromTable(table){
+  let itemList = [];
+  let itemTemplate = {}
+
+  const itemParams = getItemParams(table.querySelector('tr'))
+  const items = table.querySelectorAll('tr')
+
+  itemParams.forEach(i => {
+    if(i == "Stats Needed Stat Bonuses"){
+      itemTemplate["Stats"] = undefined;
+      return;
+    }
+    itemTemplate[i] = undefined
+  });
+  
+  items.forEach((data, index) => {
+    if(index == 0)
+      return;
+    
+    const item = getItemData(data, itemTemplate, itemParams)
+    itemList.push(item);
+  })
+  return itemList
 }
 
 function getItemParams(table){
