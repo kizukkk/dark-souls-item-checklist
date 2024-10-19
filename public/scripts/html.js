@@ -36,7 +36,10 @@ export function renderItemCategory(){
       ctgContainers.forEach(div => div.style.display = '');
     }
   })
-  updateCollectionVisible()
+
+  if(localStorage.getItem('mode') == 'collection'){
+    updateModeVisible();
+  }
 }
 
 export function renderViewMode(){
