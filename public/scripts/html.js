@@ -1,5 +1,5 @@
 const WIKI_DOMAIN = 'http://darksouls.wikidot.com/'
-const ITEM_CLASS = ['weapons', 'tools', 'shields', 'armors']
+const ITEM_CLASS = ['weapons', 'tools', 'shields', 'armors', 'spells']
 
 export function fillHtml(data){
   insertElementsToHtml(data);
