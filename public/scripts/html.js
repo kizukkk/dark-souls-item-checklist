@@ -44,17 +44,7 @@ export function updateVisible(){
   updateCollectionVisible()
 }
 
-export function resetHtml(){
-  const toRemove = document.querySelectorAll('body > div');
-
-  toRemove.forEach(item => item.remove());
-
-  fillWeaponLocalStorageAsync().then(
-    getWeaponListFromJsonAsync().then(weapons => fillHtml(weapons))
-  );
-}
-
-export function updateCollectionVisible(){
+export function renderViewMode(){
 
   const mode = localStorage.getItem('mode');
 
