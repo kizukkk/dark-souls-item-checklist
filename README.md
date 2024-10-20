@@ -23,7 +23,7 @@ DS1 Collection &mdash; resource for maintaining a personal checklist of items ob
 
 ## Footage
 
-<img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/01png.png">
+<img src="https://github.com/kizukkk/ds1_collection/blob/doc/images/01.png">
 
 
-<img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/02.png">
+<img src="https://github.com/kizukkk/ds1_collection/blob/doc/images/02.png">
