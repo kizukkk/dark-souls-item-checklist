@@ -6,6 +6,7 @@ import fs from "fs";
 
 const PATH = './assets/data'
 
+const SHIELDS_URL = "http://darksouls.wikidot.com/shields-tabview";
 const WEAPON_URL = "http://darksouls.wikidot.com/weapons-tabview";
 const TOOLS_URL = 'http://darksouls.wikidot.com/spell-tools-tabview';
 const SPELLS_URL = {
@@ -79,6 +80,11 @@ export async function updateAllCollectionData() {
   updateSinglItemInfo(SPELLS_URL['Miracles']).then(data => {
     writeJsonToServerStorage({'Miracles' : data}, 'Spells').then(
       console.log("Miracles data is writed!"))
+  });
+
+  updateMultItemInfo(SHIELDS_URL).then(data => {
+    writeJsonToServerStorage(data, 'Shields').then(
+      console.log("Shields data is writed!"))
   });
 
 }
