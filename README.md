@@ -1,23 +1,29 @@
 # Dark Souls 1. Item Collection
-Simple SPA based on JS, HTML/CSS that provides collection of Dark Souls 1 items from the Wiki.
 
-Item information based on [darksouls.wikidot.com](http://darksouls.wikidot.com/)
+DS1 Collection &mdash; resource for maintaining a personal checklist of items obtained from the game Dark Souls Remastered.
 
-## Install
+## Technologies
 
-Copy the repository and start it on a web-server (<i>example VS Code extensions Live-Server</i>).
+:iphone: Frontend: HTML page with CSS styles and JavaScript scripts to implement dynamic display and manipulation of data.
 
-There are some issues with CORS, so it must be disabled in the browser for correct functionality
+:wrench: Backend: Node.JS with Express to implement the extraction of data about items from an external resource.
 
-## Functionality 
+:page_with_curl: To obtain data, an external resource is used &mdash; [darksouls.wikidot.com](http://darksouls.wikidot.com/). 
 
-Using this SPA, you can mark the items you have received in the game, and mark those that have been upgraded to +15 quality.
-You can also switch between views (list of all items or only received items).
+## Getting started
+
+:one: Download the contents of this repository using `git clone` or in main branch: Code -> Install Zip
+
+:two: Using Node, run command in the project directory: 
+`node start` or `node server.js`
+
+:three: Optional. Make a request to update data from a resource using `Invoke-WebRequest -Uri http://HOST:PORT/data/update -Mehodt POST` in Terminal (PowerShell)
+
+:four: Open the page in your browser at `http://HOST:PORT/`
 
 ## Footage
 
-Main Page (Item List)
 <img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/01png.png">
 
-Personal Collection
+
 <img src="https://github.com/kizukkk/ds1_collection/blob/doc/image/02.png">
