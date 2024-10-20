@@ -52,13 +52,17 @@ export async function readJsonFromServerStorage(itemClassName) {
 }
 
 export async function updateAllCollectionData() {
+
+  //Update Weapons data
   updateMultItemInfo(WEAPON_URL).then(data => {
     writeJsonToServerStorage(data, 'Weapons').then(
       console.log("Weapon data is writed!"))
   });
+
+  //Update Spell-Tools data
   updateMultItemInfo(TOOLS_URL).then(data => {
     writeJsonToServerStorage(data, 'Spell-Tools').then(
-      console.log("Spell and Tools data is writed!"))
+      console.log("Spell-Tools data is writed!"))
   });
   
   //TODO : Зменьшити повторення (об'єднати)
