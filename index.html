@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=EB+Garamond" />
-  <script src="/assets/scripts/index.js" type="module"></script>
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <script src="/public/scripts/index.js" type="module"></script>
   <title>Dark Souls Collection</title>
 </head>
 <body>
   <header>
     <h1>Dark Souls Collection</h1>
+    <div id="collections">
+      <li id="weapons"> Weapons </li>
+      <li id="tools"> Spell Tools </li>
+      <li id="shields"> Shields </li>
+      <li id="armors"> Armors </li>
+      <li id="spells"> Spells </li>
+    </div>
     <nav>
       <ul>
-        <li id="mode"> Weapon List </li>
+        <li id="mode"> ... </li>
       </ul>
     </nav>
   </header>
 
-  <template id="weapon-class-template">
-    <h1 class="weapon-class-name">Straight Swords</h1>
+  <template id="category-template">
+    <h1 class="category-title">Straight Swords</h1>
     <div id="content">
     </div>
   </template>
 
-  <template id="weapon-template">
+  <template id="item-template">
     <img src="assets/images/01.png" alt="weapon_icon">
     <div>
       <a href="" target="_blank"><h1 class="title">Astora's Straight Sword</h1></a>

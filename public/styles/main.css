@@ -1,0 +1,164 @@
+body{
+  font-family: 'EB Garamond', monospace;
+  margin: 0;
+}
+
+h1{
+  font-weight: bold;
+  margin: 0;
+  font-size: 42px;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+p {
+  margin: 0;
+}
+
+nav{
+  margin-left: 5%;
+}
+
+nav > ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    font-size: 42px;
+  }
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  margin: 0 75px;
+  padding: 20px 0px;
+
+  #mode{
+    cursor: pointer;
+  }
+
+  #collections{
+    margin-left: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      margin-left: 4vh;
+      /* text-decoration-line: line-through; */
+      font-size: 38px;
+    }
+  }
+  
+}
+
+#content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 75px;
+  gap: 60px;
+
+  h1 {
+    font-size: 38px;
+  }
+}
+
+.item{
+  font-size: 26px;
+  max-width: 600px;
+  min-width: 600px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  img{
+    width: 180px;
+    height: 180px;
+  }
+
+  #drop{
+    max-height: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+  }
+
+  #button-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    :is(.collected, .upgraded){
+      background-color: rgb(200, 35, 51);
+      color: white;
+    }
+
+    :is(.common, .missed){
+      background-color: rgb(42, 174, 71);
+    }
+
+    button {
+      font-size: 22px;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  h1{
+    margin-bottom: 15px;
+  }
+  div{
+    width: 100%;
+  }
+
+}
+
+#details{
+  display: flex;
+  gap: 30px;
+
+  div > p{
+    margin-bottom: 4px;
+  }
+}
+
+
+
+.category-title {
+  font-weight: 600;
+  font-size: 38px;
+
+  margin: 0 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.category-title::before, .category-title::after {
+  content: '';
+  flex: 1;
+  border-bottom: 3px solid #000;
+}
+.category-title:not(:empty)::before {
+  margin-right: 1em;
+}
+.category-title:not(:empty)::after {
+  margin-left: 1em;
+}
