@@ -160,7 +160,7 @@ function insertElementsToHtml(data){
         
     })
     const elementContainer = document.createElement('div')
-    elementContainer.id = (`${categoryName.toLowerCase().replace(/ /g, '-')}`);
+    elementContainer.id = (`${categoryName.toLowerCase().replace(/ /g, '_').replaceAll(/[()]/g, '')}`);
     elementContainer.classList.add(collectionName)
     elementContainer.appendChild(classClone)
     document.body.appendChild(elementContainer);
