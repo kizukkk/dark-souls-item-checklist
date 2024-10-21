@@ -101,6 +101,9 @@ function getItemParams(table){
     if(paramText == "Icon"){
       paramText = "Image";
     }
+    if(paramText == 'Location'){
+      paramText = "Availability";
+    }
 
     weaponTypeParams.push(paramText.replaceAll('\n', ' '));
   })
