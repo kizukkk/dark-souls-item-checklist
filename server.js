@@ -11,7 +11,8 @@ const ITEM_CLASS = {
   'weapons': 'Weapons',
   'tools'  : 'Spell-Tools',
   'spells' : 'Spells',
-  'shields' : 'Shields'
+  'shields' : 'Shields',
+  'rings' : 'Rings',
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
