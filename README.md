@@ -1,6 +1,6 @@
-# Dark Souls 1. Item Collection
+# Dark Souls Remastered. Item Checklist
 
-DS1 Collection &mdash; resource for maintaining a personal checklist of items obtained from the game Dark Souls Remastered.
+DS1 Item Checklist &mdash; resource for maintaining a personal checklist of items obtained from the game Dark Souls Remastered.
 
 ## Technologies
 
