@@ -1,14 +1,14 @@
-# Dark Souls Remastered. Item Checklist
+# Dark Souls Remastered: Item Checklist
 
-DS1 Item Checklist &mdash; resource for maintaining a personal checklist of items obtained from the game Dark Souls Remastered.
+This project provides an interactive checklist for tracking items obtained in Dark Souls Remastered. It helps players manage their progress by maintaining a personal list of collected and uncollected items
 
 ## Technologies
 
-:iphone: Frontend: HTML page with CSS styles and JavaScript scripts to implement dynamic display and manipulation of data.
+🖥 Frontend: HTML, CSS, and JavaScript are used to dynamically render and manage the display of collected and uncollected items. The checklist allows users to filter and interact with item categories.
 
-:wrench: Backend: Node.JS with Express to implement the extraction of data about items from an external resource.
+:wrench: Backend: Node.js with Express powers the backend, which fetches data from an external source and serves it through a REST API.
 
-:page_with_curl: To obtain data, an external resource is used &mdash; [darksouls.wikidot.com](http://darksouls.wikidot.com/). 
+📄 Data is sourced from the external resource &mdash; [darksouls.wikidot.com](http://darksouls.wikidot.com/). 
 
 ## Getting started
 
