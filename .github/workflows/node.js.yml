@@ -20,12 +20,15 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Install npm v8
+      run: npm i -g npm@8
     - name: Installing dependencies...
       run: npm ci
     - run: npm run build --if-present
@@ -37,9 +40,6 @@ jobs:
       runs-on: ubuntu-latest
   
       steps:
-        - name: Install npm v8
-          run: npm i -g npm@8
-          
         - name: Checkout
           uses: actions/checkout@v3
           with:
