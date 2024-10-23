@@ -15,7 +15,7 @@ This project provides an interactive checklist for tracking items obtained in Da
 :one: Download the contents of this repository using `git clone` or in main branch: Code -> Install Zip
 
 :two: Using Node, run command in the project directory: 
-`node start` or `node server.js`
+`npm start` or `node server.js`
 
 :three: Optional. Make a request to update data from a resource using `Invoke-WebRequest -Uri http://HOST:PORT/data/update -Mehodt POST` in Terminal (PowerShell)
 
