@@ -46,4 +46,4 @@ jobs:
         - name: Check code-style
           uses: creyD/prettier_action@v3.3
           with:
-            prettier_options: --write **/*.{js,json}
+            prettier_options: --write '!(.github)/**/*.{js,json}'
