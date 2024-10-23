@@ -27,8 +27,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install npm v8
-      run: npm i -g npm@8
     - name: Installing dependencies...
       run: npm ci
     - run: npm run build --if-present
