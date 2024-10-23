@@ -1,0 +1,19 @@
+name: Code and Json Formatter
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  code_format:
+    runs-on: ubuntu-latest
+    name: JavaScript File Format
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-versions: "20"
+      - name: Prettier
+        run: npx prettier --write **/*.js
