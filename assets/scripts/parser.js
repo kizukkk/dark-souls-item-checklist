@@ -1,10 +1,10 @@
-import * as jsdom from 'jsdom';
+import * as jsdom from "jsdom";
 
 export async function parsItemsFromMultiTableViewAsync(URL) {
   try {
-    const response = await fetch(URL)    
+    const response = await fetch(URL);
     const html = await response.text();
-    const doc = new jsdom.JSDOM(html, {contentType: "text/html"});
+    const doc = new jsdom.JSDOM(html, { contentType: "text/html" });
     const tabs = doc.window.document.querySelectorAll('div[id^="wiki-tab"]');
     const result = parsingDataFromTables(tabs);
     return result;
@@ -16,11 +16,13 @@ export async function parsItemsFromMultiTableViewAsync(URL) {
 
 export async function parsItemsFromSingleTableViewAsync(URL) {
   try {
-    const response = await fetch(URL)    
+    const response = await fetch(URL);
     const html = await response.text();
-    const doc = new jsdom.JSDOM(html, {contentType: "text/html"});
-    const result = parsingDataFromTable(doc.window.document.querySelectorAll('table[class^="wiki"]')[0]);
-        
+    const doc = new jsdom.JSDOM(html, { contentType: "text/html" });
+    const result = parsingDataFromTable(
+      doc.window.document.querySelectorAll('table[class^="wiki"]')[0],
+    );
+
     return result;
   } catch (error) {
     console.error(`Error fetching data (${URL}):`, error);
@@ -29,121 +31,96 @@ export async function parsItemsFromSingleTableViewAsync(URL) {
 }
 
 function parsingDataFromTables(tables) {
-  let itemListByClass = {}
+  let itemListByClass = {};
   let itemClassList = getItemsClass(tables[0]);
-  
-  tables = Array.from(tables).slice(1, tables.length)
-  
+
+  tables = Array.from(tables).slice(1, tables.length);
+
   tables.forEach((tab, index) => {
-    const itemTables = tab.querySelector('tbody').querySelector('tbody');
-    let itemParams = [];
-    let itemTemplate = {}
-    let itemList = [];
-  
-    itemParams = getItemParams(itemTables.querySelector('tr'))
-    
-    //Init object template for item
-    itemParams.forEach(i => {
-      if(i == "Stats Needed Stat Bonuses"){
-        itemTemplate["Stats"] = undefined;
-        return;
-      }
-      itemTemplate[i] = undefined
-    });
-
-    //Fiil items 
-    itemTables.querySelectorAll('tr').forEach((data, index) => {
-      if(index == 0){
-        return;
-      }
-      
-      const item = getItemData(data, itemTemplate, itemParams)
-      itemList.push(item);
-    });
-
+    const itemList = parsingDataFromTable(
+      tab.querySelector("tbody").querySelector("tbody"),
+    );
     itemListByClass[itemClassList[index]] = itemList;
   });
 
   return itemListByClass;
 }
 
-function parsingDataFromTable(table){
+function parsingDataFromTable(table) {
   let itemList = [];
-  let itemTemplate = {}
+  let itemTemplate = {};
 
-  const itemParams = getItemParams(table.querySelector('tr'))
-  const items = table.querySelectorAll('tr')
+  const itemParams = getItemParams(table.querySelector("tr"));
+  const items = table.querySelectorAll("tr");
 
-  itemParams.forEach(i => {
-    if(i == "Stats Needed Stat Bonuses"){
+  itemParams.forEach((i) => {
+    if (i == "Stats Needed Stat Bonuses") {
       itemTemplate["Stats"] = undefined;
       return;
     }
-    itemTemplate[i] = undefined
+    itemTemplate[i] = undefined;
   });
-  
+
   items.forEach((data, index) => {
-    if(index == 0)
-      return;
-    
-    const item = getItemData(data, itemTemplate, itemParams)
+    if (index == 0) return;
+
+    const item = getItemData(data, itemTemplate, itemParams);
     itemList.push(item);
-  })
-  return itemList
+  });
+  return itemList;
 }
 
-function getItemParams(table){
-  let weaponTypeParams = []
+function getItemParams(table) {
+  let weaponTypeParams = [];
 
-  table.querySelectorAll('th').forEach(th => {
-    
+  table.querySelectorAll("th").forEach((th) => {
     let paramText = th.textContent;
-    if(paramText == "Icon"){
+    if (paramText == "Icon") {
       paramText = "Image";
     }
-    if(paramText == 'Location'){
+    if (paramText == "Location") {
       paramText = "Availability";
     }
 
-    weaponTypeParams.push(paramText.replaceAll('\n', ' '));
-  })
+    weaponTypeParams.push(paramText.replaceAll("\n", " "));
+  });
 
   return weaponTypeParams;
 }
 
-function getItemsClass(table){
-  const ul = table.querySelector('ul');
-  const li = ul.querySelectorAll('li');
+function getItemsClass(table) {
+  const ul = table.querySelector("ul");
+  const li = ul.querySelectorAll("li");
 
   let weaponTypeList = [];
 
-  li.forEach(li => weaponTypeList.push(li.textContent));
+  li.forEach((li) => weaponTypeList.push(li.textContent));
 
   return weaponTypeList;
 }
 
-function getItemData(data, template, params){
+function getItemData(data, template, params) {
   const item = structuredClone(template);
 
-  data.querySelectorAll('td').forEach((td, index) => {
-    if (td.querySelector('img')) {
-      const img = td.querySelector('img');
-      item["Image"] = img.getAttribute('src');
+  data.querySelectorAll("td").forEach((td, index) => {
+    if (td.querySelector("img")) {
+      const img = td.querySelector("img");
+      item["Image"] = img.getAttribute("src");
 
       return;
     }
 
-    if(index == params.indexOf("Stats Needed Stat Bonuses")){
+    if (index == params.indexOf("Stats Needed Stat Bonuses")) {
       const firstPart = td.childNodes[0].nodeValue?.trim();
-      const secondPart = td.childNodes[td.childNodes.length - 1].nodeValue?.trim();
+      const secondPart =
+        td.childNodes[td.childNodes.length - 1].nodeValue?.trim();
       item.Stats = {};
       item.Stats["Stats Needed"] = firstPart;
       item.Stats["Stat Bonuses"] = secondPart;
       return;
     }
-    
-    item[Object.keys(template)[index]] = td.textContent.replace(/\n/g, ' ');
 
+    item[Object.keys(template)[index]] = td.textContent.replace(/\n/g, " ");
   });
   return item;
 }
