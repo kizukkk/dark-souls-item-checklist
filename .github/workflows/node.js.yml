@@ -46,6 +46,6 @@ jobs:
             ref: ${{ github.head_ref }}
 
         - name: Check code-style
-          uses: creyD/prettier_action@v4.2
+          uses: creyD/prettier_action@v3.3
           with:
             prettier_options: --write \"./**/*.{js,json}\"
