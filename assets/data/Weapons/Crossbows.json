@@ -1,1 +1,46 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/crossbows/avelyn.png","Name":"Avelyn","Damage":"38/0/0/0  (Normal)","Range":"50","Durability":"150","Weight":"6.0","Stats":{"Stats Needed":"16*/14/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Duke's Archives treasure","Special Note":"Shoots three bolts at once."},{"Image":"http://darksouls.wikidot.com/local--files/crossbows/heavy-crossbow.png","Name":"Heavy Crossbow","Damage":"55/0/0/0  (Normal)","Range":"50","Durability":"150","Weight":"5.0","Stats":{"Stats Needed":"14*/8/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Depths treasure","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/crossbows/light-crossbow.png","Name":"Light Crossbow","Damage":"50/0/0/0  (Normal)","Range":"50","Durability":"150","Weight":"3.0","Stats":{"Stats Needed":"10*/8/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Undead Burg treasure Undead soldier drop","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/crossbows/sniper-crossbow.png","Name":"Sniper Crossbow","Damage":"52/0/0/0  (Normal)","Range":"70","Durability":"150","Weight":"8.0","Stats":{"Stats Needed":"20*/16/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Sen's Fortress treasure","Special Note":"Increases range. Cannot aim."}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/crossbows/avelyn.png",
+    "Name": "Avelyn",
+    "Damage": "38/0/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "150",
+    "Weight": "6.0",
+    "Stats": { "Stats Needed": "16*/14/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Duke's Archives treasure",
+    "Special Note": "Shoots three bolts at once."
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/crossbows/heavy-crossbow.png",
+    "Name": "Heavy Crossbow",
+    "Damage": "55/0/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "150",
+    "Weight": "5.0",
+    "Stats": { "Stats Needed": "14*/8/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Depths treasure",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/crossbows/light-crossbow.png",
+    "Name": "Light Crossbow",
+    "Damage": "50/0/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "150",
+    "Weight": "3.0",
+    "Stats": { "Stats Needed": "10*/8/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Undead Burg treasure Undead soldier drop",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/crossbows/sniper-crossbow.png",
+    "Name": "Sniper Crossbow",
+    "Damage": "52/0/0/0  (Normal)",
+    "Range": "70",
+    "Durability": "150",
+    "Weight": "8.0",
+    "Stats": { "Stats Needed": "20*/16/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Sen's Fortress treasure",
+    "Special Note": "Increases range. Cannot aim."
+  }
+]

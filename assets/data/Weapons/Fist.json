@@ -1,1 +1,52 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/fist/fist.png","Name":"Fist","Damage":"20/0/0/0  (Strike)","Durability":"5","Weight":"0","Stats":{"Stats Needed":"0*/0/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"All Classes default","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/fist/caestus.png","Name":"Caestus","Damage":"66/0/0/0  (Strike)","Durability":"300","Weight":"0.5","Stats":{"Stats Needed":"5*/8/0/0","Stat Bonuses":"C/C/-/-"},"Availability":"Sold by Andre of Astora","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/fist/claw.png","Name":"Claw","Damage":"72/0/0/0  (Slash)","Durability":"150","Weight":"1.0","Stats":{"Stats Needed":"6*/14/0/0","Stat Bonuses":"E/B/-/-"},"Availability":"Sold by Shiva of the East","Special Note":"Bleed build up is 30 per hit, does 30% of the enemy's total HP  Strong attack is replaced by a jumping horizontal swing  Roll + weak attack is replaced by a rolling thrust"},{"Image":"http://darksouls.wikidot.com/local--files/fist/dark-hand.png","Name":"Dark Hand (Right Hand)","Damage":"200/0/0/0  (Strike)","Durability":"999","Weight":"0.5","Stats":{"Stats Needed":"0*/0/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Join Darkwraith Covenant  Darkwraith (Enemy) drop","Special Note":"Strong attack is replaced by a short range grab that is capable of stealing Humanity from NPCs and other players  When equipped in left hand, can be used to create an energy shield"},{"Image":"http://darksouls.wikidot.com/local--files/fist/dragon-bone-fist.png","Name":"Dragon Bone Fist","Damage":"90/0/0/0  (Strike)","Durability":"999","Weight":"8.0","Stats":{"Stats Needed":"20*/0/0/0","Stat Bonuses":"A/-/-/-"},"Availability":"Ascension only  Upgrade +10 Fist weapon with Core of an Iron Golem","Special Note":"Raises Magic and Fire Defense by 15 points  Strong Attack is replaced by a delayed jumping uppercut"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/fist/fist.png",
+    "Name": "Fist",
+    "Damage": "20/0/0/0  (Strike)",
+    "Durability": "5",
+    "Weight": "0",
+    "Stats": { "Stats Needed": "0*/0/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "All Classes default",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/fist/caestus.png",
+    "Name": "Caestus",
+    "Damage": "66/0/0/0  (Strike)",
+    "Durability": "300",
+    "Weight": "0.5",
+    "Stats": { "Stats Needed": "5*/8/0/0", "Stat Bonuses": "C/C/-/-" },
+    "Availability": "Sold by Andre of Astora",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/fist/claw.png",
+    "Name": "Claw",
+    "Damage": "72/0/0/0  (Slash)",
+    "Durability": "150",
+    "Weight": "1.0",
+    "Stats": { "Stats Needed": "6*/14/0/0", "Stat Bonuses": "E/B/-/-" },
+    "Availability": "Sold by Shiva of the East",
+    "Special Note": "Bleed build up is 30 per hit, does 30% of the enemy's total HP  Strong attack is replaced by a jumping horizontal swing  Roll + weak attack is replaced by a rolling thrust"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/fist/dark-hand.png",
+    "Name": "Dark Hand (Right Hand)",
+    "Damage": "200/0/0/0  (Strike)",
+    "Durability": "999",
+    "Weight": "0.5",
+    "Stats": { "Stats Needed": "0*/0/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Join Darkwraith Covenant  Darkwraith (Enemy) drop",
+    "Special Note": "Strong attack is replaced by a short range grab that is capable of stealing Humanity from NPCs and other players  When equipped in left hand, can be used to create an energy shield"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/fist/dragon-bone-fist.png",
+    "Name": "Dragon Bone Fist",
+    "Damage": "90/0/0/0  (Strike)",
+    "Durability": "999",
+    "Weight": "8.0",
+    "Stats": { "Stats Needed": "20*/0/0/0", "Stat Bonuses": "A/-/-/-" },
+    "Availability": "Ascension only  Upgrade +10 Fist weapon with Core of an Iron Golem",
+    "Special Note": "Raises Magic and Fire Defense by 15 points  Strong Attack is replaced by a delayed jumping uppercut"
+  }
+]

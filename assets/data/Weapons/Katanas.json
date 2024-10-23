@@ -1,1 +1,42 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/katanas/chaos-blade.png","Name":"Chaos Blade","Damage":"144/0/0/0  Bleed 300  (Slash/Thrust)","Durability":"120","Weight":"6.0","Stats":{"Stats Needed":"16*/14/0/0","Stat Bonuses":"-/B/-/-"},"Availability":"Ascension only  Upgrade +10 Katana (Uchigatana, Iaito, Washing Pole) with Soul of Quelaag","Special Note":"Every attack that connects also drain user's HP  One handed strong attack is replaced with a dashing slash  Two handed strong attack is replaced by a vertical slash that looks like whip's"},{"Image":"http://darksouls.wikidot.com/local--files/katanas/iaito.png","Name":"Iaito","Damage":"88/0/0/0  Bleed 300  (Slash)","Durability":"80","Weight":"5.0","Stats":{"Stats Needed":"14*/20/0/0","Stat Bonuses":"-/B/-/-"},"Availability":"Blighttown treasure","Special Note":"One handed and two handed strong attack is replaced with a running slash"},{"Image":"http://darksouls.wikidot.com/local--files/katanas/uchigatana.png","Name":"Uchigatana","Damage":"90/0/0/0  Bleed 300  (Slash/Thrust)","Durability":"80","Weight":"5.0","Stats":{"Stats Needed":"14*/14/0/0","Stat Bonuses":"-/B/-/-"},"Availability":"Sold by Shiva of the East  Undead Merchant (Male) drop","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/katanas/washing-pole.png","Name":"Washing Pole","Damage":"90/0/0/0  Bleed 300  (Slash,Thrust)","Durability":"60","Weight":"8.0","Stats":{"Stats Needed":"20*/16/0/0","Stat Bonuses":"D/D/-/-"},"Availability":"Sold by Shiva of the East","Special Note":"-"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/katanas/chaos-blade.png",
+    "Name": "Chaos Blade",
+    "Damage": "144/0/0/0  Bleed 300  (Slash/Thrust)",
+    "Durability": "120",
+    "Weight": "6.0",
+    "Stats": { "Stats Needed": "16*/14/0/0", "Stat Bonuses": "-/B/-/-" },
+    "Availability": "Ascension only  Upgrade +10 Katana (Uchigatana, Iaito, Washing Pole) with Soul of Quelaag",
+    "Special Note": "Every attack that connects also drain user's HP  One handed strong attack is replaced with a dashing slash  Two handed strong attack is replaced by a vertical slash that looks like whip's"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/katanas/iaito.png",
+    "Name": "Iaito",
+    "Damage": "88/0/0/0  Bleed 300  (Slash)",
+    "Durability": "80",
+    "Weight": "5.0",
+    "Stats": { "Stats Needed": "14*/20/0/0", "Stat Bonuses": "-/B/-/-" },
+    "Availability": "Blighttown treasure",
+    "Special Note": "One handed and two handed strong attack is replaced with a running slash"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/katanas/uchigatana.png",
+    "Name": "Uchigatana",
+    "Damage": "90/0/0/0  Bleed 300  (Slash/Thrust)",
+    "Durability": "80",
+    "Weight": "5.0",
+    "Stats": { "Stats Needed": "14*/14/0/0", "Stat Bonuses": "-/B/-/-" },
+    "Availability": "Sold by Shiva of the East  Undead Merchant (Male) drop",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/katanas/washing-pole.png",
+    "Name": "Washing Pole",
+    "Damage": "90/0/0/0  Bleed 300  (Slash,Thrust)",
+    "Durability": "60",
+    "Weight": "8.0",
+    "Stats": { "Stats Needed": "20*/16/0/0", "Stat Bonuses": "D/D/-/-" },
+    "Availability": "Sold by Shiva of the East",
+    "Special Note": "-"
+  }
+]

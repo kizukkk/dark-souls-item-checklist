@@ -1,1 +1,46 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/unique-shields/crystal-ring-shield.png","Name":"Crystal Ring Shield","Damage Reduction":"70/90/70/40","Stability":"40","Durability":"120","Weight":"3","Stats":{"Stats Needed":"10/0/0/0","Stat Bonuses":"-/-/-/-"},"Availability":"Created from the Soul of the Moonlight Butterfly and a +10 small shield","Special Note":"Strong left-hand attack deals magic damage based on right-hand weapon's attack power Since patch 1.05, damage is no longer based on right hand weapon"},{"Image":"http://darksouls.wikidot.com/local--files/unique-shields/crystal-shield.png","Name":"Crystal Shield","Damage Reduction":"100/60/80/80","Stability":"60","Durability":"250","Weight":"5.0","Stats":{"Stats Needed":"14/0/0/0","Stat Bonuses":"D/-/-/-"},"Availability":"Sold by Domhnall of Zena","Special Note":"Cannot be upgraded or repaired, eventually breaks Parry replaced by shield bash"},{"Image":"http://darksouls.wikidot.com/local--files/unique-shields/spiked-shield.png","Name":"Spiked Shield","Damage Reduction":"90/28/69/40","Stability":"48","Durability":"160","Weight":"3","Stats":{"Stats Needed":"10/12/0/0","Stat Bonuses":"D/C/-/-"},"Availability":"Kirk Knight of Thorns drop","Special Note":"Parry replaced by shield bash that builds up Bleed"},{"Image":"http://darksouls.wikidot.com/local--files/unique-shields/pierce-shield.png","Name":"Pierce Shield","Damage Reduction":"95/30/70/34","Stability":"49","Durability":"180","Weight":"3.5","Stats":{"Stats Needed":"11/14/0/0","Stat Bonuses":"D/C/-/-"},"Availability":"Siegmeyer of Catarina gift","Special Note":"Parry replaced by shield bash with thrust/piercing attack property"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/unique-shields/crystal-ring-shield.png",
+    "Name": "Crystal Ring Shield",
+    "Damage Reduction": "70/90/70/40",
+    "Stability": "40",
+    "Durability": "120",
+    "Weight": "3",
+    "Stats": { "Stats Needed": "10/0/0/0", "Stat Bonuses": "-/-/-/-" },
+    "Availability": "Created from the Soul of the Moonlight Butterfly and a +10 small shield",
+    "Special Note": "Strong left-hand attack deals magic damage based on right-hand weapon's attack power Since patch 1.05, damage is no longer based on right hand weapon"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/unique-shields/crystal-shield.png",
+    "Name": "Crystal Shield",
+    "Damage Reduction": "100/60/80/80",
+    "Stability": "60",
+    "Durability": "250",
+    "Weight": "5.0",
+    "Stats": { "Stats Needed": "14/0/0/0", "Stat Bonuses": "D/-/-/-" },
+    "Availability": "Sold by Domhnall of Zena",
+    "Special Note": "Cannot be upgraded or repaired, eventually breaks Parry replaced by shield bash"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/unique-shields/spiked-shield.png",
+    "Name": "Spiked Shield",
+    "Damage Reduction": "90/28/69/40",
+    "Stability": "48",
+    "Durability": "160",
+    "Weight": "3",
+    "Stats": { "Stats Needed": "10/12/0/0", "Stat Bonuses": "D/C/-/-" },
+    "Availability": "Kirk Knight of Thorns drop",
+    "Special Note": "Parry replaced by shield bash that builds up Bleed"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/unique-shields/pierce-shield.png",
+    "Name": "Pierce Shield",
+    "Damage Reduction": "95/30/70/34",
+    "Stability": "49",
+    "Durability": "180",
+    "Weight": "3.5",
+    "Stats": { "Stats Needed": "11/14/0/0", "Stat Bonuses": "D/C/-/-" },
+    "Availability": "Siegmeyer of Catarina gift",
+    "Special Note": "Parry replaced by shield bash with thrust/piercing attack property"
+  }
+]
