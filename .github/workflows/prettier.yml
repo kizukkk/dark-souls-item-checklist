@@ -20,8 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20.x"
-      - name: Prettier (JavaScript)
-        run: npx prettier --write **/*.{js, json}
+      - name: Prettier
+        run: npx prettier --write \"./**/*.{js, json}\"
       - name: Commit Format Change
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
