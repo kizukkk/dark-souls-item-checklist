@@ -1,1 +1,79 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/talismans/canvas-talisman.png","Name":"Canvas Talisman","Maximum Magic Adjustment (varies with Faith)":"220","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/14","Stat Bonuses":"-/-/-/A"},"Availability":"Cleric starting equipment. Sold by Patches","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/talismans/darkmoon-talisman.png","Name":"Darkmoon Talisman","Maximum Magic Adjustment (varies with Faith)":"240","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/24","Stat Bonuses":"-/-/-/A"},"Availability":"Achieve Blade of the Darkmoon covenant rank +1","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/talismans/ivory-talisman.png","Name":"Ivory Talisman","Maximum Magic Adjustment (varies with Faith)":"234","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/16","Stat Bonuses":"-/-/-/A"},"Availability":"Rhea of Thorolund drop Petrus of Thorolund drop (after he killed Rhea)","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/talismans/sunlight-talisman.png","Name":"Sunlight Talisman","Maximum Magic Adjustment (varies with Faith)":"234","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/14","Stat Bonuses":"-/-/-/A"},"Availability":"Solaire of Astora drop","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/talismans/talisman.png","Name":"Talisman","Maximum Magic Adjustment (varies with Faith)":"200","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/10","Stat Bonuses":"-/-/-/B"},"Availability":"Sold by Petrus of Thorolund Sold by Rhea of Thorolund","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/talismans/thorolund-talisman.png","Name":"Thorolund Talisman","Maximum Magic Adjustment (varies with Faith)":"165","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/0/10","Stat Bonuses":"-/-/-/C"},"Availability":"Sold by Petrus of Thorolund Sold by Patches","Special Note":"Fixed MagAdjust, doesn't scale with any attributes."},{"Image":"http://darksouls.wikidot.com/local--files/talismans/velka-s-talisman.png","Name":"Velka's Talisman","Maximum Magic Adjustment (varies with Faith)":"220","Damage":"14/0/0/0  (Strike)","Durability":"50","Weight":"0.3","Stats":{"Stats Needed":"4/0/16/0","Stat Bonuses":"-/-/A/-"},"Availability":"Sold by Oswald of Carim","Special Note":"Scales with Intelligence rather than Faith"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/canvas-talisman.png",
+    "Name": "Canvas Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "220",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/14", "Stat Bonuses": "-/-/-/A" },
+    "Availability": "Cleric starting equipment. Sold by Patches",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/darkmoon-talisman.png",
+    "Name": "Darkmoon Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "240",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/24", "Stat Bonuses": "-/-/-/A" },
+    "Availability": "Achieve Blade of the Darkmoon covenant rank +1",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/ivory-talisman.png",
+    "Name": "Ivory Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "234",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/16", "Stat Bonuses": "-/-/-/A" },
+    "Availability": "Rhea of Thorolund drop Petrus of Thorolund drop (after he killed Rhea)",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/sunlight-talisman.png",
+    "Name": "Sunlight Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "234",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/14", "Stat Bonuses": "-/-/-/A" },
+    "Availability": "Solaire of Astora drop",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/talisman.png",
+    "Name": "Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "200",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/10", "Stat Bonuses": "-/-/-/B" },
+    "Availability": "Sold by Petrus of Thorolund Sold by Rhea of Thorolund",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/thorolund-talisman.png",
+    "Name": "Thorolund Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "165",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/0/10", "Stat Bonuses": "-/-/-/C" },
+    "Availability": "Sold by Petrus of Thorolund Sold by Patches",
+    "Special Note": "Fixed MagAdjust, doesn't scale with any attributes."
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/talismans/velka-s-talisman.png",
+    "Name": "Velka's Talisman",
+    "Maximum Magic Adjustment (varies with Faith)": "220",
+    "Damage": "14/0/0/0  (Strike)",
+    "Durability": "50",
+    "Weight": "0.3",
+    "Stats": { "Stats Needed": "4/0/16/0", "Stat Bonuses": "-/-/A/-" },
+    "Availability": "Sold by Oswald of Carim",
+    "Special Note": "Scales with Intelligence rather than Faith"
+  }
+]

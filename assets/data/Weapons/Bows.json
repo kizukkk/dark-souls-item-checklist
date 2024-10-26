@@ -1,1 +1,57 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/bows/black-bow-of-pharis.png","Name":"Black Bow of Pharis","Damage":"34/0/0/0  (Normal)","Range":"65","Durability":"100","Weight":"1.0","Stats":{"Stats Needed":"9*/18/0/0","Stat Bonuses":"E/S/-/-"},"Availability":"Forest Hunter drop","Special Note":"Increased Range"},{"Image":"http://darksouls.wikidot.com/local--files/bows/composite-bow.png","Name":"Composite Bow","Damage":"55/0/0/0  (Normal)","Range":"38","Durability":"100","Weight":"1.0","Stats":{"Stats Needed":"11*/12/0/0","Stat Bonuses":"C/C/-/-"},"Availability":"New Londo Ruins treasure","Special Note":"Shortened Range"},{"Image":"http://darksouls.wikidot.com/local--files/bows/darkmoon-bow.png","Name":"Darkmoon Bow","Damage":"85/85/0/0  (Normal)","Range":"50","Durability":"400","Weight":"1.0","Stats":{"Stats Needed":"7*/16/0/16","Stat Bonuses":"E/D/-/D"},"Availability":"Ascension only  Upgrade +10 bow with Soul of Gwyndolin","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/bows/long-bow.png","Name":"Long Bow","Damage":"36/0/0/0  (Normal)","Range":"50","Durability":"100","Weight":"1.0","Stats":{"Stats Needed":"9*/14/0/0","Stat Bonuses":"D/A/-/-"},"Availability":"Darkroot Basin treasure  Undead Crystal Soldier drop","Special Note":"-"},{"Image":"http://darksouls.wikidot.com/local--files/bows/short-bow.png","Name":"Short Bow","Damage":"31/0/0/0  (Normal)","Range":"50","Durability":"100","Weight":"0.5","Stats":{"Stats Needed":"7*/12/0/0","Stat Bonuses":"D/A/-/-"},"Availability":"Starting weapon for the Hunter class  Sold by Undead Merchant Male","Special Note":"-"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/bows/black-bow-of-pharis.png",
+    "Name": "Black Bow of Pharis",
+    "Damage": "34/0/0/0  (Normal)",
+    "Range": "65",
+    "Durability": "100",
+    "Weight": "1.0",
+    "Stats": { "Stats Needed": "9*/18/0/0", "Stat Bonuses": "E/S/-/-" },
+    "Availability": "Forest Hunter drop",
+    "Special Note": "Increased Range"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/bows/composite-bow.png",
+    "Name": "Composite Bow",
+    "Damage": "55/0/0/0  (Normal)",
+    "Range": "38",
+    "Durability": "100",
+    "Weight": "1.0",
+    "Stats": { "Stats Needed": "11*/12/0/0", "Stat Bonuses": "C/C/-/-" },
+    "Availability": "New Londo Ruins treasure",
+    "Special Note": "Shortened Range"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/bows/darkmoon-bow.png",
+    "Name": "Darkmoon Bow",
+    "Damage": "85/85/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "400",
+    "Weight": "1.0",
+    "Stats": { "Stats Needed": "7*/16/0/16", "Stat Bonuses": "E/D/-/D" },
+    "Availability": "Ascension only  Upgrade +10 bow with Soul of Gwyndolin",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/bows/long-bow.png",
+    "Name": "Long Bow",
+    "Damage": "36/0/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "100",
+    "Weight": "1.0",
+    "Stats": { "Stats Needed": "9*/14/0/0", "Stat Bonuses": "D/A/-/-" },
+    "Availability": "Darkroot Basin treasure  Undead Crystal Soldier drop",
+    "Special Note": "-"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/bows/short-bow.png",
+    "Name": "Short Bow",
+    "Damage": "31/0/0/0  (Normal)",
+    "Range": "50",
+    "Durability": "100",
+    "Weight": "0.5",
+    "Stats": { "Stats Needed": "7*/12/0/0", "Stat Bonuses": "D/A/-/-" },
+    "Availability": "Starting weapon for the Hunter class  Sold by Undead Merchant Male",
+    "Special Note": "-"
+  }
+]

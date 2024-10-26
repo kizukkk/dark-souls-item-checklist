@@ -1,1 +1,232 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/miracles/bountiful-sunlight.png","Name":"Bountiful Sunlight","Uses":"2","Faith":"36","Slots":"2","Description":"Gradual HP restoration for self and allies in vicinity  Requires you to be in Princess's Guard to use","Availability":"The Duke's Archives Pisaca drop","Type / Affinity":"Support"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/darkmoon-blade.png","Name":"Darkmoon Blade","Uses":"1","Faith":"30","Slots":"1","Description":"Boost right hand weapon with rays of Darkmoon  Requires you to be in Blade of the Darkmoon to use","Availability":"Reach +1 in the Blade of the Darkmoon Covenant","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/emit-force.png","Name":"Emit Force","Uses":"6","Faith":"18","Slots":"1","Description":"Release a powerful burst of force which can knock down or stun enemies","Availability":"Siegmeyer of Catarina at Firelink Shrine","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/force.png","Name":"Force","Uses":"21","Faith":"12","Slots":"1","Description":"Create shockwave, but no damage done.","Availability":"Petrus of Thorolund Rhea of Thorolund","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/gravelord-greatsword-dance.png","Name":"Gravelord Greatsword Dance","Uses":"40","Faith":"0","Slots":"1","Description":"Giant Gravelord Swords jut out in vicinity","Availability":"Reach +1 in the Gravelord Servant Covenant","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/gravelord-sword-dance.png","Name":"Gravelord Sword Dance","Uses":"40","Faith":"0","Slots":"1","Description":"Gravelord Swords jut out in vicinity","Availability":"Join the Gravelord Servant Covenant","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/great-heal-excerpt.png","Name":"Great Heal Excerpt","Uses":"1","Faith":"14","Slots":"1","Description":"Heals a large amount of HP","Availability":"Petrus of Thorolund Rhea of Thorolund Patches","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/great-heal.png","Name":"Great Heal","Uses":"3","Faith":"24","Slots":"1","Description":"Restores high HP","Availability":"Rhea of Thorolund","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/great-lightning-spear.png","Name":"Great Lightning Spear","Uses":"10","Faith":"30","Slots":"1","Description":"Strictly more powerful version of the Lightning Spear","Availability":"Reach +1 in the Warrior of Sunlight Covenant","Type / Affinity":"Ranged"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/great-magic-barrier.png","Name":"Great Magic Barrier","Uses":"2","Faith":"24","Slots":"1","Description":"Cover body in powerful def. magic coating.","Availability":"Ash Lake treasure","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/heal.png","Name":"Heal","Uses":"5","Faith":"12","Slots":"1","Description":"Heals a small amount of HP","Availability":"Cleric starting spell Petrus of Thorolund Rhea of Thorolund Patches","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/homeward.png","Name":"Homeward","Uses":"1","Faith":"18","Slots":"1","Description":"Return to last Bonfire used","Availability":"Petrus of Thorolund Rhea of Thorolund","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/karmic-justice.png","Name":"Karmic Justice","Uses":"4","Faith":"20","Slots":"1","Description":"Temporary autocounter vs. heavy damage","Availability":"Oswald of Carim","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/lightning-spear.png","Name":"Lightning Spear","Uses":"10","Faith":"20","Slots":"1","Description":"Throw a javelin of lightning","Availability":"Join the Warrior of Sunlight Covenant","Type / Affinity":"Ranged"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/magic-barrier.png","Name":"Magic Barrier","Uses":"4","Faith":"14","Slots":"1","Description":"Cover body in defensive magic coating","Availability":"Rhea of Thorolund","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/replenishment.png","Name":"Replenishment","Uses":"2","Faith":"16","Slots":"1","Description":"Gradual HP restoration","Availability":"Rhea of Thorolund at the Tomb of the Giants","Type / Affinity":"Support"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/seek-guidance.png","Name":"Seek Guidance","Uses":"5","Faith":"12","Slots":"1","Description":"Display more guidance from other worlds","Availability":"Petrus of Thorolund Rhea of Thorolund","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/soothing-sunlight.png","Name":"Soothing Sunlight","Uses":"3","Faith":"48","Slots":"2","Description":"Restores high HP for self and allies in vicinity  Requires you to be in Princess's Guard to use","Availability":"The Duke's Archives Pisaca drop","Type / Affinity":"Support"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/sunlight-blade.png","Name":"Sunlight Blade","Uses":"1","Faith":"30","Slots":"1","Description":"Buff right hand weapon with strong Lightning","Availability":"Anor Londo, in the Darkmoon Tomb after defeating Dark Sun Gwyndolin","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/sunlight-spear.png","Name":"Sunlight Spear","Uses":"5","Faith":"50","Slots":"2","Description":"Upgraded version of the Lightning Spear  Requires you to be in Warrior of Sunlight to use","Availability":"Join Warrior of Sunlight Covenant & offer Soul of Gwyn, Lord of Cinder at the Altar of Sunlight","Type / Affinity":"Ranged"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/tranquil-walk-of-peace.png","Name":"Tranquil Walk of Peace","Uses":"3","Faith":"18","Slots":"1","Description":"Slows all walking within effect area","Availability":"Catacombs treasure","Type / Affinity":"AoE"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/vow-of-silence.png","Name":"Vow of Silence","Uses":"2","Faith":"30","Slots":"2","Description":"Prevents casting of Magic within effect area","Availability":"Painted World of Ariamis treasure","Type / Affinity":"Support/Self"},{"Image":"http://darksouls.wikidot.com/local--files/miracles/wrath-of-the-gods.png","Name":"Wrath of the Gods","Uses":"3","Faith":"28","Slots":"1","Description":"Create powerful shockwave","Availability":"Rhea of Thorolund","Type / Affinity":"AoE"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/bountiful-sunlight.png",
+    "Name": "Bountiful Sunlight",
+    "Uses": "2",
+    "Faith": "36",
+    "Slots": "2",
+    "Description": "Gradual HP restoration for self and allies in vicinity  Requires you to be in Princess's Guard to use",
+    "Availability": "The Duke's Archives Pisaca drop",
+    "Type / Affinity": "Support"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/darkmoon-blade.png",
+    "Name": "Darkmoon Blade",
+    "Uses": "1",
+    "Faith": "30",
+    "Slots": "1",
+    "Description": "Boost right hand weapon with rays of Darkmoon  Requires you to be in Blade of the Darkmoon to use",
+    "Availability": "Reach +1 in the Blade of the Darkmoon Covenant",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/emit-force.png",
+    "Name": "Emit Force",
+    "Uses": "6",
+    "Faith": "18",
+    "Slots": "1",
+    "Description": "Release a powerful burst of force which can knock down or stun enemies",
+    "Availability": "Siegmeyer of Catarina at Firelink Shrine",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/force.png",
+    "Name": "Force",
+    "Uses": "21",
+    "Faith": "12",
+    "Slots": "1",
+    "Description": "Create shockwave, but no damage done.",
+    "Availability": "Petrus of Thorolund Rhea of Thorolund",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/gravelord-greatsword-dance.png",
+    "Name": "Gravelord Greatsword Dance",
+    "Uses": "40",
+    "Faith": "0",
+    "Slots": "1",
+    "Description": "Giant Gravelord Swords jut out in vicinity",
+    "Availability": "Reach +1 in the Gravelord Servant Covenant",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/gravelord-sword-dance.png",
+    "Name": "Gravelord Sword Dance",
+    "Uses": "40",
+    "Faith": "0",
+    "Slots": "1",
+    "Description": "Gravelord Swords jut out in vicinity",
+    "Availability": "Join the Gravelord Servant Covenant",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/great-heal-excerpt.png",
+    "Name": "Great Heal Excerpt",
+    "Uses": "1",
+    "Faith": "14",
+    "Slots": "1",
+    "Description": "Heals a large amount of HP",
+    "Availability": "Petrus of Thorolund Rhea of Thorolund Patches",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/great-heal.png",
+    "Name": "Great Heal",
+    "Uses": "3",
+    "Faith": "24",
+    "Slots": "1",
+    "Description": "Restores high HP",
+    "Availability": "Rhea of Thorolund",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/great-lightning-spear.png",
+    "Name": "Great Lightning Spear",
+    "Uses": "10",
+    "Faith": "30",
+    "Slots": "1",
+    "Description": "Strictly more powerful version of the Lightning Spear",
+    "Availability": "Reach +1 in the Warrior of Sunlight Covenant",
+    "Type / Affinity": "Ranged"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/great-magic-barrier.png",
+    "Name": "Great Magic Barrier",
+    "Uses": "2",
+    "Faith": "24",
+    "Slots": "1",
+    "Description": "Cover body in powerful def. magic coating.",
+    "Availability": "Ash Lake treasure",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/heal.png",
+    "Name": "Heal",
+    "Uses": "5",
+    "Faith": "12",
+    "Slots": "1",
+    "Description": "Heals a small amount of HP",
+    "Availability": "Cleric starting spell Petrus of Thorolund Rhea of Thorolund Patches",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/homeward.png",
+    "Name": "Homeward",
+    "Uses": "1",
+    "Faith": "18",
+    "Slots": "1",
+    "Description": "Return to last Bonfire used",
+    "Availability": "Petrus of Thorolund Rhea of Thorolund",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/karmic-justice.png",
+    "Name": "Karmic Justice",
+    "Uses": "4",
+    "Faith": "20",
+    "Slots": "1",
+    "Description": "Temporary autocounter vs. heavy damage",
+    "Availability": "Oswald of Carim",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/lightning-spear.png",
+    "Name": "Lightning Spear",
+    "Uses": "10",
+    "Faith": "20",
+    "Slots": "1",
+    "Description": "Throw a javelin of lightning",
+    "Availability": "Join the Warrior of Sunlight Covenant",
+    "Type / Affinity": "Ranged"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/magic-barrier.png",
+    "Name": "Magic Barrier",
+    "Uses": "4",
+    "Faith": "14",
+    "Slots": "1",
+    "Description": "Cover body in defensive magic coating",
+    "Availability": "Rhea of Thorolund",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/replenishment.png",
+    "Name": "Replenishment",
+    "Uses": "2",
+    "Faith": "16",
+    "Slots": "1",
+    "Description": "Gradual HP restoration",
+    "Availability": "Rhea of Thorolund at the Tomb of the Giants",
+    "Type / Affinity": "Support"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/seek-guidance.png",
+    "Name": "Seek Guidance",
+    "Uses": "5",
+    "Faith": "12",
+    "Slots": "1",
+    "Description": "Display more guidance from other worlds",
+    "Availability": "Petrus of Thorolund Rhea of Thorolund",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/soothing-sunlight.png",
+    "Name": "Soothing Sunlight",
+    "Uses": "3",
+    "Faith": "48",
+    "Slots": "2",
+    "Description": "Restores high HP for self and allies in vicinity  Requires you to be in Princess's Guard to use",
+    "Availability": "The Duke's Archives Pisaca drop",
+    "Type / Affinity": "Support"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/sunlight-blade.png",
+    "Name": "Sunlight Blade",
+    "Uses": "1",
+    "Faith": "30",
+    "Slots": "1",
+    "Description": "Buff right hand weapon with strong Lightning",
+    "Availability": "Anor Londo, in the Darkmoon Tomb after defeating Dark Sun Gwyndolin",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/sunlight-spear.png",
+    "Name": "Sunlight Spear",
+    "Uses": "5",
+    "Faith": "50",
+    "Slots": "2",
+    "Description": "Upgraded version of the Lightning Spear  Requires you to be in Warrior of Sunlight to use",
+    "Availability": "Join Warrior of Sunlight Covenant & offer Soul of Gwyn, Lord of Cinder at the Altar of Sunlight",
+    "Type / Affinity": "Ranged"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/tranquil-walk-of-peace.png",
+    "Name": "Tranquil Walk of Peace",
+    "Uses": "3",
+    "Faith": "18",
+    "Slots": "1",
+    "Description": "Slows all walking within effect area",
+    "Availability": "Catacombs treasure",
+    "Type / Affinity": "AoE"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/vow-of-silence.png",
+    "Name": "Vow of Silence",
+    "Uses": "2",
+    "Faith": "30",
+    "Slots": "2",
+    "Description": "Prevents casting of Magic within effect area",
+    "Availability": "Painted World of Ariamis treasure",
+    "Type / Affinity": "Support/Self"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/miracles/wrath-of-the-gods.png",
+    "Name": "Wrath of the Gods",
+    "Uses": "3",
+    "Faith": "28",
+    "Slots": "1",
+    "Description": "Create powerful shockwave",
+    "Availability": "Rhea of Thorolund",
+    "Type / Affinity": "AoE"
+  }
+]
