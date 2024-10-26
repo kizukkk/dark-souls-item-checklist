@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-font-size: 28px;
   --second-font-size: 18px;
 
@@ -7,8 +7,8 @@
   --item-max-width: 600px;
 }
 
-body{
-  font-family: 'EB Garamond', monospace;
+body {
+  font-family: "EB Garamond", monospace;
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ p {
   margin: 0;
 }
 
-header{
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,17 +30,17 @@ header{
   padding: 20px 0px;
   font-size: var(--primary-font-size);
 
-  h1{
+  h1 {
     margin: 0;
     font-weight: bold;
     font-size: var(--primary-font-size);
   }
 
-  #mode{
+  #mode {
     cursor: pointer;
   }
 
-  #collections{
+  #collections {
     margin-left: auto;
     display: grid;
     justify-items: center;
@@ -53,12 +53,12 @@ header{
     }
   }
 
-  #mode-container{
+  #mode-container {
     margin-left: 5%;
-    
+
     ul {
       list-style-type: none;
-    
+
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -67,10 +67,9 @@ header{
       padding: 0;
     }
   }
-  
 }
 
-#content{
+#content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -83,7 +82,7 @@ header{
   }
 }
 
-.item{
+.item {
   font-size: var(--second-font-size);
   width: var(--item-width);
   max-width: var(--item-max-width);
@@ -92,30 +91,30 @@ header{
   align-items: center;
   gap: 15px;
 
-  img{
+  img {
     width: var(--image-rect-size);
     height: var(--image-rect-size);
   }
 
-  #drop{
+  #drop {
     max-height: 175px;
     overflow: hidden;
-    text-overflow: ellipsis;  
+    text-overflow: ellipsis;
   }
 
-  #button-container{
+  #button-container {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
 
-    :is(.collected, .upgraded){
+    :is(.collected, .upgraded) {
       background-color: rgb(200, 35, 51);
       color: white;
     }
 
-    :is(.common, .missed){
+    :is(.common, .missed) {
       background-color: rgb(42, 174, 71);
     }
 
@@ -126,25 +125,22 @@ header{
       cursor: pointer;
     }
   }
-  h1{
+  h1 {
     margin-bottom: 15px;
   }
-  div{
+  div {
     width: 100%;
   }
-
 }
 
-#details{
+#details {
   display: flex;
   gap: 30px;
 
-  div > p{
+  div > p {
     margin-bottom: 4px;
   }
 }
-
-
 
 .category-title {
   font-weight: 600;
@@ -155,8 +151,9 @@ header{
   align-items: center;
   text-align: center;
 }
-.category-title::before, .category-title::after {
-  content: '';
+.category-title::before,
+.category-title::after {
+  content: "";
   flex: 1;
   border-bottom: 3px solid #000;
 }
