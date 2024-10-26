@@ -12,12 +12,6 @@ body{
   margin: 0;
 }
 
-h1{
-  font-weight: bold;
-  margin: 0;
-  font-size: 42px;
-}
-
 a {
   color: black;
   text-decoration: none; /* no underline */
@@ -27,25 +21,6 @@ p {
   margin: 0;
 }
 
-nav{
-  margin-left: 5%;
-}
-
-nav > ul {
-  list-style-type: none;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 60px;
-  margin: 0;
-  padding: 0;
-  
-  li {
-    font-size: 42px;
-  }
-}
-
 header{
   display: flex;
   flex-direction: row;
@@ -53,6 +28,13 @@ header{
   height: 100px;
   margin: 0 75px;
   padding: 20px 0px;
+  font-size: var(--primary-font-size);
+
+  h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: var(--primary-font-size);
+  }
 
   #mode{
     cursor: pointer;
@@ -68,8 +50,21 @@ header{
       list-style-type: none;
       cursor: pointer;
       margin-left: 4vh;
-      /* text-decoration-line: line-through; */
-      font-size: 38px;
+    }
+  }
+
+  #mode-container{
+    margin-left: 5%;
+    
+    ul {
+      list-style-type: none;
+    
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 60px;
+      margin: 0;
+      padding: 0;
     }
   }
   
