@@ -1,3 +1,12 @@
+:root{
+  --primary-font-size: 28px;
+  --second-font-size: 18px;
+
+  --image-rect-size: 150px;
+  --item-width: 380px;
+  --item-max-width: 600px;
+}
+
 body{
   font-family: 'EB Garamond', monospace;
   margin: 0;
