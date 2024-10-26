@@ -79,22 +79,22 @@ header{
   gap: 60px;
 
   h1 {
-    font-size: 38px;
+    font-size: var(--primary-font-size);
   }
 }
 
 .item{
-  font-size: 26px;
-  max-width: 600px;
-  min-width: 600px;
+  font-size: var(--second-font-size);
+  width: var(--item-width);
+  max-width: var(--item-max-width);
 
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 
   img{
-    width: 180px;
-    height: 180px;
+    width: var(--image-rect-size);
+    height: var(--image-rect-size);
   }
 
   #drop{
@@ -120,7 +120,7 @@ header{
     }
 
     button {
-      font-size: 22px;
+      font-size: var(--second-font-size);
       color: white;
       border: none;
       cursor: pointer;
