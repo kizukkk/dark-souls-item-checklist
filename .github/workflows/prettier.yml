@@ -24,6 +24,10 @@ jobs:
         run: npx prettier --write **/*.js
       - name: Prettier (JSON)
         run: npx prettier --write **/*.json
+      - name: Prettier (HTML & CSS)
+        run: |
+          npx prettier --write **/*.html
+          npx prettier --write **/*.css
       - name: Commit Format Change
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
