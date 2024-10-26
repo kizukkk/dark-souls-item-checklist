@@ -78,7 +78,7 @@ function getItemParams(table) {
     if (paramText == "Icon") {
       paramText = "Image";
     }
-    if (paramText == "Location") {
+    if (/Location/.exec(paramText) != null) {
       paramText = "Availability";
     }
 
