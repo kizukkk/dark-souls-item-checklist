@@ -20,7 +20,7 @@ const SPELLS_URL = {
 };
 
 async function writeJsonToServerStorage(items, name) {
-  console.log("Start data writing...");
+  console.log(`Start ${name} data writing...`);
   Object.keys(items).forEach((item, index) => {
     const dir = `${PATH}/${name}`;
     if (!fs.existsSync(dir)) {
@@ -79,24 +79,14 @@ export async function updateAllCollectionData() {
     );
   });
 
-  //TODO : Зменьшити повторення (об'єднати)
-  updateSinglItemInfo(SPELLS_URL["Pyromancies"]).then((data) => {
-    writeJsonToServerStorage({ Pyromancies: data }, "Spells").then(
-      console.log("Pyromancies data is writed!"),
-    );
-  });
-
-  updateSinglItemInfo(SPELLS_URL["Sorceries"]).then((data) => {
-    writeJsonToServerStorage({ Sorceries: data }, "Spells").then(
-      console.log("Sorceries data is writed!"),
-    );
-  });
-
-  updateSinglItemInfo(SPELLS_URL["Miracles"]).then((data) => {
-    writeJsonToServerStorage({ Miracles: data }, "Spells").then(
-      console.log("Miracles data is writed!"),
-    );
-  });
+  //Update Spells data 
+  Object.keys(SPELLS_URL).forEach(spell => {
+    updateSinglItemInfo(SPELLS_URL[spell]).then((data) => {
+      writeJsonToServerStorage({ [spell]: data }, spell).then(
+        console.log(`${spell} data is writed!`),
+      );
+    });
+  })
 
   updateSinglItemInfo(RINGS_URL).then((data) => {
     writeJsonToServerStorage({ Rings: data }, "Rings").then(
