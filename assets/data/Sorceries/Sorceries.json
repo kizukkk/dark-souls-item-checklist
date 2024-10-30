@@ -1,1 +1,282 @@
-[{"Image":"http://darksouls.wikidot.com/local--files/sorceries/aural-decoy.png","Name":"Aural Decoy","Uses":"20","INT":"10","Slots":"1","Description":"Lure enemies away by creating a sound originating in the distance.","Availability":"Griggs of Vinheim","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/cast-light.png","Name":"Cast Light","Uses":"3","INT":"14","Slots":"1","Description":"Cast a bright light upon surroundings.","Availability":"Dusk of Oolacile Elizabeth","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/chameleon.png","Name":"Chameleon","Uses":"11","INT":"14","Slots":"1","Description":"Transforms player into an object. Object depends on location.","Availability":"Dusk of Oolacile Elizabeth","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/crystal-magic-weapon.png","Name":"Crystal Magic Weapon","Uses":"3","INT":"25","Slots":"1","Description":"Even stronger Magic Weapon.","Availability":"Big Hat Logan (only in the The Duke's Archives)","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/crystal-soul-spear.png","Name":"Crystal Soul Spear","Uses":"4","INT":"44","Slots":"1","Description":"Stronger Soul Spear.","Availability":"Big Hat Logan (only in the The Duke's Archives)","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/dark-bead.png","Name":"Dark Bead","Uses":"6","INT":"16","Slots":"1","Description":"Fires a large number of small dark orbs that deal physical damage as well as magic.","Availability":"Chasm of the Abyss","Type / Affinity":"Ranged / Physical"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/dark-fog.png","Name":"Dark Fog","Uses":"2","INT":"18","Slots":"1","Description":"Creates a black fog that inflicts poison.","Availability":"Oolacile Township","Type / Affinity":"Ranged / Poison"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/dark-orb.png","Name":"Dark Orb","Uses":"12","INT":"16","Slots":"1","Description":"Fires a dark orb that deals physical damage as well as magic.","Availability":"Oolacile Township","Type / Affinity":"Ranged / Physical"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/fall-control.png","Name":"Fall Control","Uses":"10","INT":"15","Slots":"1","Description":"Negate damage and noise from fall, unless the fall is normally fatal.","Availability":"Griggs of Vinheim","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/great-heavy-soul-arrow.png","Name":"Great Heavy Soul Arrow","Uses":"8","INT":"16","Slots":"1","Description":"A stronger version of Heavy Soul Arrow.","Availability":"Griggs of Vinheim Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/great-magic-weapon.png","Name":"Great Magic Weapon","Uses":"3","INT":"15","Slots":"1","Description":"Stronger Magic Weapon.","Availability":"Anor Londo","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/great-soul-arrow.png","Name":"Great Soul Arrow","Uses":"20","INT":"14","Slots":"1","Description":"Soul Arrow, but with higher damage.","Availability":"Griggs of Vinheim Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/heavy-soul-arrow.png","Name":"Heavy Soul Arrow","Uses":"12","INT":"12","Slots":"1","Description":"A stronger version of Soul Arrow but with higher casting time. Has the chance to poise-break and stagger the target.","Availability":"Griggs of Vinheim Rickert of Vinheim Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/hidden-body.png","Name":"Hidden Body","Uses":"3","INT":"14","Slots":"1","Description":"Turns body nearly invisible.","Availability":"Dusk of Oolacile Elizabeth","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/hidden-weapon.png","Name":"Hidden Weapon","Uses":"3","INT":"14","Slots":"1","Description":"Turns right hand weapon invisible.","Availability":"Dusk of Oolacile Elizabeth","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/homing-crystal-soulmass.png","Name":"Homing Crystal Soulmass","Uses":"10","INT":"24","Slots":"1","Description":"Stronger Homing Soulmass.","Availability":"Big Hat Logan (only in The Duke's Archives)","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/homing-soulmass.png","Name":"Homing Soulmass","Uses":"10","INT":"18","Slots":"1","Description":"Creates up to five orbs of light that attack nearby enemies.","Availability":"Griggs of Vinheim (after Logan leaves) Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/hush.png","Name":"Hush","Uses":"6","INT":"15","Slots":"1","Description":"Masks all noises of the caster.","Availability":"Sen's Fortress Griggs of Vinheim drop","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/magic-shield.png","Name":"Magic Shield","Uses":"5","INT":"10","Slots":"1","Description":"Increases left hand Shield's stability stat.","Availability":"Griggs of Vinheim Big Hat Logan","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/magic-weapon.png","Name":"Magic Weapon","Uses":"5","INT":"10","Slots":"1","Description":"Adds Magic damage to right hand weapon.","Availability":"Griggs of Vinheim Big Hat Logan","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/pursuers.png","Name":"Pursuers","Uses":"3","INT":"32","Slots":"2","Description":"Similar to Homing Soulmass but slower, homes stronger, and does physical damage.","Availability":"Snuggly the Crow","Type / Affinity":"Ranged / Physical"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/remedy.png","Name":"Remedy","Uses":"4","INT":"16","Slots":"1","Description":"Reduce Bleed, Poison, and Toxin build-up; and undo Poison and Toxin effects.","Availability":"Blighttown","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/repair.png","Name":"Repair","Uses":"1","INT":"14","Slots":"1","Description":"Repair equipped weapons and armor.","Availability":"Dusk of Oolacile Elizabeth","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/resist-curse.png","Name":"Resist Curse","Uses":"4","INT":"16","Slots":"1","Description":"Reduces Curse buildup, but cannot remove Curse","Availability":"Ingward","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/soul-arrow.png","Name":"Soul Arrow","Uses":"30","INT":"10","Slots":"1","Description":"Shoots a bolt of light at the enemy.","Availability":"Griggs of Vinheim Rickert of Vinheim Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/soul-spear.png","Name":"Soul Spear","Uses":"4","INT":"36","Slots":"1","Description":"Soul Arrow, but much stronger and pierce targets.","Availability":"Griggs of Vinheim (after Logan leaves) Big Hat Logan","Type / Affinity":"Ranged / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/strong-magic-shield.png","Name":"Strong Magic Shield","Uses":"3","INT":"15","Slots":"1","Description":"Stronger Magic Shield.","Availability":"The Duke's Archives","Type / Affinity":"Support / Magic"},{"Image":"http://darksouls.wikidot.com/local--files/sorceries/white-dragon-breath.png","Name":"White Dragon Breath","Uses":"20","INT":"50","Slots":"1","Description":"Emits crystal breath of Seath the Scaleless.","Availability":"Big Hat Logan drop","Type / Affinity":"Ranged / Magic"}]
+[
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/aural-decoy.png",
+    "Name": "Aural Decoy",
+    "Uses": "20",
+    "INT": "10",
+    "Slots": "1",
+    "Description": "Lure enemies away by creating a sound originating in the distance.",
+    "Availability": "Griggs of Vinheim",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/cast-light.png",
+    "Name": "Cast Light",
+    "Uses": "3",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Cast a bright light upon surroundings.",
+    "Availability": "Dusk of Oolacile Elizabeth",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/chameleon.png",
+    "Name": "Chameleon",
+    "Uses": "11",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Transforms player into an object. Object depends on location.",
+    "Availability": "Dusk of Oolacile Elizabeth",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/crystal-magic-weapon.png",
+    "Name": "Crystal Magic Weapon",
+    "Uses": "3",
+    "INT": "25",
+    "Slots": "1",
+    "Description": "Even stronger Magic Weapon.",
+    "Availability": "Big Hat Logan (only in the The Duke's Archives)",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/crystal-soul-spear.png",
+    "Name": "Crystal Soul Spear",
+    "Uses": "4",
+    "INT": "44",
+    "Slots": "1",
+    "Description": "Stronger Soul Spear.",
+    "Availability": "Big Hat Logan (only in the The Duke's Archives)",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/dark-bead.png",
+    "Name": "Dark Bead",
+    "Uses": "6",
+    "INT": "16",
+    "Slots": "1",
+    "Description": "Fires a large number of small dark orbs that deal physical damage as well as magic.",
+    "Availability": "Chasm of the Abyss",
+    "Type / Affinity": "Ranged / Physical"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/dark-fog.png",
+    "Name": "Dark Fog",
+    "Uses": "2",
+    "INT": "18",
+    "Slots": "1",
+    "Description": "Creates a black fog that inflicts poison.",
+    "Availability": "Oolacile Township",
+    "Type / Affinity": "Ranged / Poison"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/dark-orb.png",
+    "Name": "Dark Orb",
+    "Uses": "12",
+    "INT": "16",
+    "Slots": "1",
+    "Description": "Fires a dark orb that deals physical damage as well as magic.",
+    "Availability": "Oolacile Township",
+    "Type / Affinity": "Ranged / Physical"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/fall-control.png",
+    "Name": "Fall Control",
+    "Uses": "10",
+    "INT": "15",
+    "Slots": "1",
+    "Description": "Negate damage and noise from fall, unless the fall is normally fatal.",
+    "Availability": "Griggs of Vinheim",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/great-heavy-soul-arrow.png",
+    "Name": "Great Heavy Soul Arrow",
+    "Uses": "8",
+    "INT": "16",
+    "Slots": "1",
+    "Description": "A stronger version of Heavy Soul Arrow.",
+    "Availability": "Griggs of Vinheim Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/great-magic-weapon.png",
+    "Name": "Great Magic Weapon",
+    "Uses": "3",
+    "INT": "15",
+    "Slots": "1",
+    "Description": "Stronger Magic Weapon.",
+    "Availability": "Anor Londo",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/great-soul-arrow.png",
+    "Name": "Great Soul Arrow",
+    "Uses": "20",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Soul Arrow, but with higher damage.",
+    "Availability": "Griggs of Vinheim Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/heavy-soul-arrow.png",
+    "Name": "Heavy Soul Arrow",
+    "Uses": "12",
+    "INT": "12",
+    "Slots": "1",
+    "Description": "A stronger version of Soul Arrow but with higher casting time. Has the chance to poise-break and stagger the target.",
+    "Availability": "Griggs of Vinheim Rickert of Vinheim Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/hidden-body.png",
+    "Name": "Hidden Body",
+    "Uses": "3",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Turns body nearly invisible.",
+    "Availability": "Dusk of Oolacile Elizabeth",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/hidden-weapon.png",
+    "Name": "Hidden Weapon",
+    "Uses": "3",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Turns right hand weapon invisible.",
+    "Availability": "Dusk of Oolacile Elizabeth",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/homing-crystal-soulmass.png",
+    "Name": "Homing Crystal Soulmass",
+    "Uses": "10",
+    "INT": "24",
+    "Slots": "1",
+    "Description": "Stronger Homing Soulmass.",
+    "Availability": "Big Hat Logan (only in The Duke's Archives)",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/homing-soulmass.png",
+    "Name": "Homing Soulmass",
+    "Uses": "10",
+    "INT": "18",
+    "Slots": "1",
+    "Description": "Creates up to five orbs of light that attack nearby enemies.",
+    "Availability": "Griggs of Vinheim (after Logan leaves) Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/hush.png",
+    "Name": "Hush",
+    "Uses": "6",
+    "INT": "15",
+    "Slots": "1",
+    "Description": "Masks all noises of the caster.",
+    "Availability": "Sen's Fortress Griggs of Vinheim drop",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/magic-shield.png",
+    "Name": "Magic Shield",
+    "Uses": "5",
+    "INT": "10",
+    "Slots": "1",
+    "Description": "Increases left hand Shield's stability stat.",
+    "Availability": "Griggs of Vinheim Big Hat Logan",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/magic-weapon.png",
+    "Name": "Magic Weapon",
+    "Uses": "5",
+    "INT": "10",
+    "Slots": "1",
+    "Description": "Adds Magic damage to right hand weapon.",
+    "Availability": "Griggs of Vinheim Big Hat Logan",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/pursuers.png",
+    "Name": "Pursuers",
+    "Uses": "3",
+    "INT": "32",
+    "Slots": "2",
+    "Description": "Similar to Homing Soulmass but slower, homes stronger, and does physical damage.",
+    "Availability": "Snuggly the Crow",
+    "Type / Affinity": "Ranged / Physical"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/remedy.png",
+    "Name": "Remedy",
+    "Uses": "4",
+    "INT": "16",
+    "Slots": "1",
+    "Description": "Reduce Bleed, Poison, and Toxin build-up; and undo Poison and Toxin effects.",
+    "Availability": "Blighttown",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/repair.png",
+    "Name": "Repair",
+    "Uses": "1",
+    "INT": "14",
+    "Slots": "1",
+    "Description": "Repair equipped weapons and armor.",
+    "Availability": "Dusk of Oolacile Elizabeth",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/resist-curse.png",
+    "Name": "Resist Curse",
+    "Uses": "4",
+    "INT": "16",
+    "Slots": "1",
+    "Description": "Reduces Curse buildup, but cannot remove Curse",
+    "Availability": "Ingward",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/soul-arrow.png",
+    "Name": "Soul Arrow",
+    "Uses": "30",
+    "INT": "10",
+    "Slots": "1",
+    "Description": "Shoots a bolt of light at the enemy.",
+    "Availability": "Griggs of Vinheim Rickert of Vinheim Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/soul-spear.png",
+    "Name": "Soul Spear",
+    "Uses": "4",
+    "INT": "36",
+    "Slots": "1",
+    "Description": "Soul Arrow, but much stronger and pierce targets.",
+    "Availability": "Griggs of Vinheim (after Logan leaves) Big Hat Logan",
+    "Type / Affinity": "Ranged / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/strong-magic-shield.png",
+    "Name": "Strong Magic Shield",
+    "Uses": "3",
+    "INT": "15",
+    "Slots": "1",
+    "Description": "Stronger Magic Shield.",
+    "Availability": "The Duke's Archives",
+    "Type / Affinity": "Support / Magic"
+  },
+  {
+    "Image": "http://darksouls.wikidot.com/local--files/sorceries/white-dragon-breath.png",
+    "Name": "White Dragon Breath",
+    "Uses": "20",
+    "INT": "50",
+    "Slots": "1",
+    "Description": "Emits crystal breath of Seath the Scaleless.",
+    "Availability": "Big Hat Logan drop",
+    "Type / Affinity": "Ranged / Magic"
+  }
+]

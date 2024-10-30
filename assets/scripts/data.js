@@ -79,14 +79,14 @@ export async function updateAllCollectionData() {
     );
   });
 
-  //Update Spells data 
-  Object.keys(SPELLS_URL).forEach(spell => {
+  //Update Spells data
+  Object.keys(SPELLS_URL).forEach((spell) => {
     updateSinglItemInfo(SPELLS_URL[spell]).then((data) => {
       writeJsonToServerStorage({ [spell]: data }, spell).then(
         console.log(`${spell} data is writed!`),
       );
     });
-  })
+  });
 
   updateSinglItemInfo(RINGS_URL).then((data) => {
     writeJsonToServerStorage({ Rings: data }, "Rings").then(
